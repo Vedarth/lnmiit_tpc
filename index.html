@@ -157,14 +157,14 @@
                   </div>
                   <div class="large-9 medium-9 column small-12" style="">
                    <p class="paras">The LNMIIT Jaipur was established in the year 2002 by the Lakshmi and Usha Mittal Foundation and the State Government of Rajasthan, as a joint venture. It was envisioned to be nurtured over the years to become an Institution of higher learning in the broad areas of computing, communication and allied sub-areas, with a strong interdisciplinary flavour and with a scope to gradually expand into other areas of contemporary relevance.  Starting with the first interdisciplinary programme called Communication and Computer Engineering (CCE), with gradual addition of other programmes such as Electronics and Computer Engineering (ECE), Computer Science and Engineering (CSE), Physics, Mathematics, HSS and most recently Mechanical and Mechatronics Engineering areas.  The Institute has evolved as one of the best-in-class young Institutions of higher learning in the country. <br>
-                  Apart from the flexible curricular structure, opportunities for multiple levels of interfacing with both faculty and industry in form of on-campus projects,  off-campus internships, on-campus internships though LUSIP programme, winter internships outside the country for select students in University research labs, summer internships for select students at ArcelorMittal, Kazakhstan and select industrial research laboratories both within India and abroad, some long internships in industrial research labs for eligible students, students and faculty get opportunities of closely working on the real world problems.<button data-toggle="read-more-content"><p style="color: blue">read more</p></button><br>
+                  Apart from the flexible curricular structure, opportunities for multiple levels of interfacing with both faculty and industry in form of on-campus projects,  off-campus internships, on-campus internships though LUSIP programme, winter internships outside the country for select students in University research labs, summer internships for select students at ArcelorMittal, Kazakhstan and select industrial research laboratories both within India and abroad, some long internships in industrial research labs for eligible students, students and faculty get opportunities of closely working on the real world problems.<button data-toggle="read-more-content" id="readButton" onclick="toggleBut()"><p style="color:#F0663B">read more</p></button><br>
                   <div class="read-more-content" id="read-more-content" data-toggler data-animate="hinge-in-from-top hinge-out-from-top" style="color:#696969;  align-content: center; align-items: center;">
                   Thanks to the competitive environment offered by the Institute, the LNMIIT students have been doing very well in several coding and problem solving competitions.  They have also made the Institute proud by getting selected in double numbers in Google Summer of Code.  GSOC-2017 had 15 selections from the Institute whereas GSOC-2018 has 10 selections and two mentors from the LNMIIT. <br>
 Institute has created a robust eco-system involving seven specialized centres of research (some of which are initially created as virtual centres) and one centre for technology business incubation and entrepreneurial leadership. This has been done with a view to not only encourage quality research and development in the niche areas of technology but also encourage creation of new start-up ventures by students and faculty of the Institute.<br>
 Apart from benefitting from its strong entrepreneurial culture as of this writing, these centres are collaborating with both industries and academia around the world in the process of solving some of the most pressing problems of our times including those related to Energy Efficiency, Artificial Intelligence, Computer Vision, IoT, ML, Robotics, Social Computing, Cryptography, Cyber Security and Next Generation Networking (5G included). <br>
 The Institute does have several well-appointed laboratories and over next three years intends to add another sixteen laboratories as part of its growth plan.  Institute also takes pride in its input student quality as well as its well qualified faculty.<br>
 In its efforts towards creating responsible citizens of tomorrow who would not only do their work well but also would be able to balance between work and life so as to maximize their happiness, the Institute has launched Project Happiness, and over and above, courses being offered on ethics.
-We are proud to present our students to world outside with a hope and confidence that although young, their attitude and aptitude would in the near and long term would add value to any organization or a company that embraces them. 
+We are proud to present our students to world outside with a hope and confidence that although young, their attitude and aptitude would in the near and long term would add value to any organization or a company that embraces them.<button data-toggle="read-more-content" id="readLessButton" onclick="toggleBut()"><p style="color: #F0663B">read less</p></button><br>
 
                   </div>
 
@@ -354,6 +354,17 @@ $('a[href*="#"]')
           document.getElementById('lifeat').click();
           document.getElementById('lifeat').click();
           document.getElementById('clicktext').click();
+        }
+        function toggleBut() {
+            var x = document.getElementById("readButton");
+            var y= document.getElementById("readLessButton");
+            if (x.style.display === "none") {
+                x.style.display = "inline-block";
+                y.style.display= "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "inline-block";
+            }
         }
       </script>
       <script type="text/javascript">

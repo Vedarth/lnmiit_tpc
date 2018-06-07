@@ -177,14 +177,18 @@ a.ddmenua:hover, a.ddemenua:link, a.ddmenua:active, a.ddmenua:visited{
 }
 .read-more-content,.read-more {
 	text-align: left;
-	margin-top: -2rem;
+	margin-top: -1rem;
 	padding-top: 0.1rem;
+	display: none;
 
   &.expanded {
     .read-more {
       color:#696969;
 	align-content: center;
 	align-items: center;
+    }
+    .readButton {
+    	visibility: hidden;
     }
   }
 }
