@@ -115,7 +115,7 @@
 
 
     .headings{
-      color: #F0663B; line-height: 35px;margin-bottom: 15px;margin-top: 80px;text-align: center;
+      color: #F0663B; margin-bottom: 1rem;margin-top: 2rem;text-align: center;
     }
     #subheading{
       line-height: 0px; font-weight: 550; color:  #808080; font-weight: bold;
@@ -129,9 +129,7 @@
     .paras{
       color: #696969; text-align: left;font-size: 16px; font-weight:500;
     }
-    #bocks{
-      align-content: right;
-    }
+  
     .card-image{
       border-color: white;
       width: 150px;
