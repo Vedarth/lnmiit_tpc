@@ -1,16 +1,28 @@
-  
-      .bgimg-1 {
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("images/image3.jpeg");
-        opacity: 2;
-        height: 100%;
-        max-width: 100%;
-        filter: blur(2);
-        -webkit-filter: blur(0px);
-      }
+.button-display-left 
+  {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+  .button-display-right 
+  {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+  }
+
+  .button-padding
+  {
+    padding: 8px 16px;
+    color: #fff!important;
+    background-color: #000!important;
+  }
+  .button-padding:hover
+  {
+    padding: 8px 16px;
+    color: #000!important;
+    background-color: #fff!important;
+  }
       .first{
       	filter: !important blur(0px);
         -webkit-filter: !important blur(0px);
