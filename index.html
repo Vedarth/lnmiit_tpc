@@ -120,7 +120,7 @@
                             <br>
                         
                         </div>
-                        <div id='scroll_bar' class="large-1 medium-1 column hide-for-small-only text-center"> 
+                        <div id='scroll_bar1' class="large-1 medium-1 column hide-for-small-only text-center"> 
                           <div class= "row align-center" style="margin-top: 7em;" data-smooth-scroll>
                            <ul id="loc_bar" style="list-style-type: none" data-smooth-scroll>
                                <li style="padding: 3px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#About-us" id="about_button" class="button tiny" style="background-color:#FF8C00; border-radius: 10px"></a></li>
@@ -166,7 +166,7 @@
                 </div>
                 </div>
             </div>
-            <div id='scroll_bar' class="large-1 column hide-for-small-only text-center"> 
+            <div id='scroll_bar2' class="large-1 column hide-for-small-only text-center"> 
                   <div class= "row align-center" style="margin-top: 7em;" data-smooth-scroll>
                       <ul id="loc_bar" style="list-style-type: none" data-smooth-scroll >
                           <li style="padding: 0px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#About-us" class="button tiny hollow" style="border-color:#A0A0A0; border-radius: 10px;"></a></li> 
@@ -352,8 +352,10 @@ $('a[href*="#"]')
       <script type="text/javascript">
         var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
         if (isSafari){
-          var x = document.getElementById('scroll_bar');
+          var x = document.getElementById('scroll_bar1');
           x.style.display = "none";
+          var y = document.getElementById('scroll_bar2');
+          y.style.display = "none";
         }
       </script>
   </body>
