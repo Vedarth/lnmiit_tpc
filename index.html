@@ -30,13 +30,7 @@
      
     	
 
-      .bgimg-1{
-        
-       background-image:  url("images/image3.jpg");         
-          opacity: 0.9;
-          filter: alpha(opacity=50);
-         
-        }
+      
         i {
   border: solid #FF4500;
   border-width: 0 8px 8px 0;
@@ -52,12 +46,19 @@
     </style>
   </head>
   <body onload="myfun()">
- <div class="row bgimg-1">
-    <div class="large-12 columns" style="padding-right: 0px;margin-right: 0px;">
-      <div class="caption">
-          <span class="border" id="clicktext"> <h1>The LNM Institute of Information Technology</h1><h1><b>Training & Placement Cell</b></h1></span>
-        </div>
 
+
+<div>
+  <div style="position: relative;">
+  <img class="mySlides" src="images/img1.jpg" style="width:100%;">
+  <img class="mySlides" src="images/img2.jpg" style="width:100% ">
+  <img class="mySlides" src="images/img3.jpg" style="width:100%   ">
+  
+
+  <button class="button-padding  button-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="button-padding  button-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<div class="large-12 columns" style="padding-right: 0px; margin-right: 0px; background-color: transparent;position: absolute;top: 0px;">
       <div class="first" style="padding-right: 0px;margin-right: 0px;">
           <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
             <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
@@ -73,37 +74,36 @@
             </div>
             <div class="top-bar-right large-7 columns" id="responsive-menu" >
               <ul class="menu iconlist" id="topul">
-                    <li><a href="index.html" id="topli"><b>Home</b></a></li>
+                <li><a href="index.html" id="topli"><b>Home</b></a></li>
                 <li><a href="recruiters.html" id="topli"><b>Recruiters</b></a></li>
                 <li><a href="cons_stats.html" id="topli"><b>Statistics</b></a></li>
-                <li><ul class="dropdown menu" data-dropdown-menu>
-                            <li>
-                              <a href="#" class="ddmenua" id="lifeat" active style="font-size: 20px; color: #F0663B;"><b>Life at LNMIIT</b></a>
-                              <ul class="menu">
-                                <li><a href="academics.html" class="ddmenu">Academic Momentum</a></li>
-                                <li><a href="Prof_societies.html" class="ddmenu">Professional Societies</a></li>
-                                <li><a href="centres.html" class="ddmenu">Centers for Advanced Learning</a></li>
-                                <li><a href="clubs.html" class="ddmenu">Student Clubs</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                          </li>
+                <li>
+                  <ul class="dropdown menu" data-dropdown-menu>
+                      <li>
+                        <a href="#" class="ddmenua" id="lifeat" active style="font-size: 20px; color: #F0663B;"><b>Life at LNMIIT</b></a>
+                        <ul class="menu">
+                          <li><a href="academics.html" class="ddmenu">Academic Momentum</a></li>
+                          <li><a href="Prof_societies.html" class="ddmenu">Professional Societies</a></li>
+                          <li><a href="centres.html" class="ddmenu">Centers for Advanced Learning</a></li>
+                          <li><a href="clubs.html" class="ddmenu">Student Clubs</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+                </li>
                 <li><a href="contact_us.html" id="topli"><b>Contact</b></a></li>
-
               </ul>
             </div>
           </div>
    
       </div>
+ </div>
+
  
-
-    </div>
-
-    <div align="center" class="responsive-menu hide-for-small-only">
-          <li><a href="#About-us" id="about_button" class="hollow button" data-toggle="responsive-menu" style="background-color:transparent; border-radius: 100px; margin-top: 37%;font-size: 120%; border-color: white;border-width: 1px;"><i class="down"></i></a></li>
-    </div>
-
 </div>
+
+      <!--About-us-->
+     
+      <section class="About-us">
 
 <div class="row grid-padding-x grid-x align-center">
     <div class="small-12 medium-9 large-9"> 
@@ -143,10 +143,11 @@
                  </p>
                   </div>
                 </div>
+                
 
 
     </div>
-    <div class="small-12 medium-3 large-3 column text-center">
+    <div class="small-6 medium-2 large-2 column text-center">
           <h4 class="headings">Updates</h4>
           <div class="container paras" style="overflow:hidden; height: 100%; " >
             <ul style="list-style:none;">
@@ -179,9 +180,8 @@
             </ul>
           </div>
     </div>
-</div>
   
-
+</div>
       <!--recruiters-->
       <section name="Recruiters full-width">
             <a id="Recruiters"></a>
@@ -361,6 +361,26 @@ $(document).ready(function() {
           document.getElementById('lifeat').click();
           document.getElementById('lifeat').click();
           document.getElementById('clicktext').click();
+
+
+        }
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
         }
         function toggleBut() {
             var x = document.getElementById("readButton");
