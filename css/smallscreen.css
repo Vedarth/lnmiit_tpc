@@ -204,6 +204,9 @@
     .readButton {
     	visibility: hidden;
     }
+   }
   }
-}
+  .imgDir{
+  	align-self: center; margin-left: 5em;
+  }
 }
