@@ -216,51 +216,15 @@
         </table>
       <br>
       </div>
-<br>
-            <br>  <br>
-
-      <h3 align="center" style="text-align: center;color: #F0663B; font-weight: bolder; ">Year-wise Placement Statistics</h3>
-
-          <script type="text/javascript">
-
-                google.charts.load('current', {'packages':['corechart']});
-                google.charts.setOnLoadCallback(drawVisualization);
-
-
-                function drawVisualization() {
-                  // Some raw data (not necessarily accurate)
-                  var data = google.visualization.arrayToDataTable([
-                   ['Year', 'Average Package'],
-                   ['2015',  4.10],
-                   ['2016',  5.47],
-                   ['2017',  6.98],
-                   ['2018',  7.37],
-
-                ]);
-
-              var options = {
-                title : 'Year-wise Average Package',
-                vAxis : {baseline : 0},
-                hAxis: {title: 'Year'},
-                seriesType: 'bars',
-               };
-
-              var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
-              chart.draw(data, options);
-            }
-
-        </script>
-
+     
       <div class="row align-center">
         <div class="large-5 small-12">
-            <div id="chart_div" style="position:relative; align-content: auto; width: 100%; height: 400px;"></div><br>
-          
-
-            <div align="center" style="margin-bottom:60px;margin-top:30px">
+            
+          <div align="center" style="margin-bottom:60px;margin-top:30px">
               <input type="button" class="myButton" value="Complete Placement Report" onclick="window.open('Complete_placement.html')" />
-            </div>
-            </div>
-            </div>
+          </div>
+        </div>
+      </div>
       </div>
       <div class="large-2 medium-2"></div>
     </div>
