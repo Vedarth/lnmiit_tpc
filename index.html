@@ -113,7 +113,7 @@
       
     </div>
   </div>
-    <div class="small-12 medium-3 large-3 column text-center align-self" style="float: right; height: relative">
+    <div class="small-12 medium-3 large-3 column text-center align-self" style="float: right; height: relative;">
 
           <h5 class="headings" >Updates</h5>
           <hr style="width: 80%; margin-top: -1rem">
@@ -151,13 +151,10 @@
               <div class="row ">
                 
                   <div class="large-2 medium-2 column cell" >
-                      <div class="card-image" >
-                        <img class="imgDir" src="images/director-pic.jpg">
+                      <div>
+                        <img class="imgDir" src="images/director-pic2.jpg" style="max-height: 250px">
                       </div>
-                      <div class="card-section">
-                        <h6>Rahul Banerjee</h6>
-                        <p>Director<br>The LNMIIT</p>
-                      </div>
+                      
                   </div>
                   <div class="large-10 medium-10 column small-12" >
                    <p class="paras">The LNMIIT Jaipur was established in the year 2002 by the Lakshmi and Usha Mittal Foundation and the State Government of Rajasthan, as a joint venture. It was envisioned to be nurtured over the years to become an Institution of higher learning in the broad areas of computing, communication and allied sub-areas, with a strong interdisciplinary flavour and with a scope to gradually expand into other areas of contemporary relevance.  Starting with the first interdisciplinary programme called Communication and Computer Engineering (CCE), with gradual afddition of other programmes such as Electronics and Computer Engineering (ECE), Computer Science and Engineering (CSE), Physics, Mathematics, HSS and most recently Mechanical and Mechatronics Engineering areas.  The Institute has evolved as one of the best-in-class young Institutions of higher learning in the country. <button data-toggle="read-more-content" id="readButton" onclick="toggleBut()"><p style="color:#F0663B; padding-left: 0.5rem">read more...</p></button><br>
@@ -178,8 +175,43 @@
     </div>
 <!--graphs-->
 
-		<div class="row align-center">
-			<div class="large-6 medium-6 column"  ><img src="images/no of recruiters.png"></div>
+		<h3 class="headings">Statistics</h3>
+		<div class="row align-center" >
+			
+			<script type="text/javascript">
+
+			    google.charts.load('current', {'packages':['line']});
+      			google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Year');
+      data.addColumn('number', 'Number of Recruiters');
+
+      data.addRows([
+        [2016,34],
+        [2017,42],
+        [2018,55],
+        ]);
+
+      var options = {
+        chart: {
+          title: 'Number of recruiters',
+          subtitle: '(on-campus)'
+        },
+        width: 600,
+        height: 280
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+			
+			</script>
+			<div class="large-6 medium-6 column"  id="linechart_material" ></div>
+				
 				<script type="text/javascript">
 
                 google.charts.load('current', {'packages':['corechart']});
@@ -210,12 +242,12 @@
 
         		</script>
            
-      <div class="large-6 medium-6 small-12 column " id="chart_div"  ></div>		
+      <div class="large-6 medium-6 small-12 column " id="chart_div" style="height: 300px;" ></div>		
   </div>
   <div class="row align-center " >
-    	<div class="large-4 medium-4 small-4 column" ><img  src="images/student placed.png" ></div>
-    	<div class="large-4 medium-4 small-4 column" ><img src="images/highest salary.png" ></div>
-    	<div class="large-4 medium-4 small-4 column" style="float: left; "><img src="images/offers.png" ></div>
+    	<div class="large-4 medium-4 small-4 column" ><img  src="images/student placed.png" style="height: 200px;"></div>
+    	<div class="large-4 medium-4 small-4 column" ><img src="images/highest salary.png" style="height: 200px;"></div>
+    	<div class="large-4 medium-4 small-4 column" style="float: left; "><img src="images/offers.png" style="height: 200px;" ></div>
 	</div>	
       <!--recruiters-->
             <a id="Recruiters"></a>
@@ -276,7 +308,7 @@
                   <p> ©Copyright 2018. All rights reserved | Placement Cell LNMIIT</p>
         </div>
         <div class="large-8 columns">
-          <p align="right"> Developers:- <a href="https://github.com/jitenss" target="blank">Jiten Sadhwani</a>,<a href="https://github.com/Vedarth" target="blank"> Vedarth Sharma </a>,<a href="https://github.com/aasthasona79" target="blank"> Aastha Agarwal</a>, <a href="https://github.com/kritika0598" target="blank"> Kritika singhal </a>, <a href="https://github.com/atharvasharma"  target="blank">Atharva Sharma</a>,<a href="https://github.com/NickSneo" target="blank"> Nischal Sharma</a></p>
+          <p align="right"> Developers:- <a href="https://github.com/malverick" target="blank">Sumit Madhwani </a>,<a href="https://github.com/jitenss" target="blank"> Jiten Sadhwani </a>,<a href="https://github.com/Vedarth" target="blank"> Vedarth Sharma </a>,<a href="https://github.com/aasthasona79" target="blank"> Aastha Agarwal</a>, <a href="https://github.com/kritika0598" target="blank"> Kritika singhal </a>, <a href="https://github.com/atharvasharma"  target="blank">Atharva Sharma</a>,<a href="https://github.com/NickSneo" target="blank"> Nischal Sharma</a></p>
         </div>
         
       </div>
