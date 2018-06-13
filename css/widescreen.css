@@ -204,8 +204,11 @@
     }
   }
   }
-  .imgDir{
-  	
+  .graphs{
+  	width: 20%;
+  }
+  #chart_div{
+  	height: 25rem;
   }
 
 .docs-example-orbit-slide {
