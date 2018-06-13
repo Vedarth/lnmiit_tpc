@@ -190,5 +190,18 @@ a.ddmenua:hover, a.ddemenua:link, a.ddmenua:active, a.ddmenua:visited{
     .readButton {
     	visibility: hidden;
     }
-  }
+   }
+
+.column-g {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+ }
+
+ .row-g::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 }
