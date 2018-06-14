@@ -124,7 +124,8 @@
 	color:#696969;
 	align-content: center;
 	align-items: center;
-}
+	text-align: justify;
+   }
 .rec_pic {
 	border-radius: 100%;
 	border-color: #F0F0F0;
