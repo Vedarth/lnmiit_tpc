@@ -186,13 +186,13 @@
     function drawChart() {
 
       var data = new google.visualization.DataTable();
-      data.addColumn('number', 'Year');
+      data.addColumn('string', 'Year');
       data.addColumn('number', 'Number of Recruiters');
 
       data.addRows([
-        [2016,34],
-        [2017,42],
-        [2018,55],
+        ['2016',34],
+        ['2017',42],
+        ['2018',55],
         ]);
 
       var options = {
@@ -200,7 +200,7 @@
           title: 'Number of recruiters',
           subtitle: '(on-campus)'
         },
-        width: 600,
+        width: 500,
         height: 280
       };
 
@@ -210,7 +210,7 @@
     }
 			
 			</script>
-			<div class="large-6 medium-6 small-12 column"  id="linechart_material" ></div>
+			<div class="large-6 medium-6 small-12 column"  id="linechart_material" style="float: left;" ></div>
 				
 				<script type="text/javascript">
 
@@ -242,7 +242,7 @@
 
         		</script>
            
-      <div class="large-6 medium-6 small-12 column " id="chart_div" style="height: 300px;" ></div>		
+      <div class="large-6 medium-6 small-12 column " id="chart_div" style="height: 300px; float: left;" ></div>		
   </div>
   <div class="row align-center " >
     	<div class="large-4 medium-4 small-4 column" ><img  src="images/student placed.png" style="height: 200px;"></div>

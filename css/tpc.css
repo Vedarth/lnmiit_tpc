@@ -125,7 +125,8 @@
 	align-content: center;
 	align-items: center;
 	text-align: justify;
-   }
+    text-justify: inter-word;
+}
 .rec_pic {
 	border-radius: 100%;
 	border-color: #F0F0F0;
