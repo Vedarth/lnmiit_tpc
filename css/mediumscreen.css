@@ -1,4 +1,4 @@
-@media screen and  (min-width: 1025px) and (max-width: 1400px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
 	.heading{
 		align-content: center;
 	}
@@ -18,7 +18,9 @@
 		border-bottom: none;
 		height: 3em;
 	}
-
+	.row1{
+		padding-top: 5rem;
+	}
 	.inactive_scroll{
 		border-color:#A0A0A0;
 		border-radius: 100%;
@@ -209,7 +211,7 @@
   	width: 20%;
   }
   #chart_div{
-  	height: 20rem;
+  	height: 25rem;
   }
 
 .docs-example-orbit-slide {
