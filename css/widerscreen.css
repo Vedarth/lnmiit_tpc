@@ -1,4 +1,15 @@
-@media screen and  (min-width: 1025px) and (max-width: 1400px){
+@media screen and  (min-width: 1401px) {
+	.row{
+		margin-right: 0rem;
+		margin-left: 0rem;
+		padding-left: 5em;
+		padding-right: 5em;
+		display: block;
+		max-width: none !important;
+	}
+	.row1{
+		margin-top: 3em;
+	}
 	.heading{
 		align-content: center;
 	}
