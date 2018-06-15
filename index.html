@@ -81,7 +81,7 @@
 <div class="row align-center row1" >
     <div class="small-12 medium-9 large-9 column "> 
       <div class="row align-center">
-      <br><br><br>
+      <br><br><br><br>
         <div class="orbit" role="region" aria-label="Training and Placement Cell" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" >
           <ul class="orbit-container" >
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
@@ -170,7 +170,9 @@
       
     </div>
   </div>
+
     <div class="small-12 medium-3 large-3 column text-center align-center" style="float: right; height: relative;">
+
 
           <h5 class="headings" >Updates</h5>
           <hr style="width: 80%; margin-top: -1rem">
@@ -232,7 +234,7 @@
     </div>
 <!--graphs-->
 
-		<h3 class="headings">Statistics</h3>
+		<h4 class="headings">Our Achievements</h4>
 		<div class="row align-center" >
 			
 			<script type="text/javascript">
@@ -240,7 +242,7 @@
 			    google.charts.load('current', {'packages':['line']});
       			google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
+      function drawChart() {
 
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Year');
@@ -257,6 +259,7 @@
           title: 'Number of recruiters',
           subtitle: '(on-campus)'
         },
+        legend:{ position:'none'},
         width: 500,
         height: 280
       };
@@ -271,6 +274,74 @@
 				
 				<script type="text/javascript">
 
+          google.charts.load('current', {'packages':['line']});
+            google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Avg Package');
+
+      data.addRows([
+        ['2015',4.1],
+        ['2016',5.47],
+        ['2017',6.98],
+        ['2018',7.34],
+        ]);
+
+      var options = {
+        chart: {
+          title: 'Year-wise Average Package',
+          },
+        legend:{ position:'none'},
+        width: 500,
+        height: 280
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material2'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+      
+      </script>
+      <div class="large-6 medium-6 small-12 column"  id="linechart_material2" style="float: left;" ></div>
+
+         <script type="text/javascript">
+
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawVisualization);
+
+
+                function drawVisualization() {
+                  // Some raw data (not necessarily accurate)
+                  var data = google.visualization.arrayToDataTable([
+                   ['Year', 'No. Of Recruiters'],
+                   ['2016',  34],
+                   ['2017',  42],
+                   ['2018',  55],
+
+                ]);
+
+              var options = {
+                title : 'Number of Recruiters',
+                subtitle: '(on campus)',
+                vAxis : {baseline : 0},
+                hAxis: {title: 'Year'},
+                seriesType: 'bars',
+                legend:{ position:'none'},
+                };
+
+              var chart = new google.visualization.ComboChart(document.getElementById('chart_div2'));
+              chart.draw(data, options);
+            }
+
+            </script>
+           
+      <div class="large-6 medium-6 small-12 column " id="chart_div2" style="height: 300px; float: left;" ></div>
+
+        <script type="text/javascript">
+
                 google.charts.load('current', {'packages':['corechart']});
                 google.charts.setOnLoadCallback(drawVisualization);
 
@@ -282,7 +353,7 @@
                    ['2015',  4.10],
                    ['2016',  5.47],
                    ['2017',  6.98],
-                   ['2018',  7.37],
+                   ['2018',  7.34],
 
                 ]);
 
@@ -291,6 +362,7 @@
                 vAxis : {baseline : 0},
                 hAxis: {title: 'Year'},
                 seriesType: 'bars',
+                legend:{ position:'none'},
                 };
 
               var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
@@ -305,7 +377,9 @@
     	<div class="large-4 medium-4 small-4 column" ><img  src="images/student placed.png" style="height: 200px;"></div>
     	<div class="large-4 medium-4 small-4 column" ><img src="images/highest salary.png" style="height: 200px;"></div>
     	<div class="large-4 medium-4 small-4 column" style="float: left; "><img src="images/offers.png" style="height: 200px;" ></div>
+
 	</div>	
+  <div class="paras" style="text-align: center; ">For Complete Stats <a href="cons_stats.html" class="button round button small" style="background-color: #F0663B;">Click Here</a></div>
       <!--recruiters-->
             <a id="Recruiters"></a>
           <br>
