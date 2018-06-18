@@ -219,9 +219,13 @@
   color: $white;
 }
 .orbit-container{
-	height: 100em;
+	height: 30em;
+
 }
 
+.orbit-image{
+	height: 30em;
+}
   .orbit-slide:nth-of-type(1) & {
     background: dodgerblue;
   }
