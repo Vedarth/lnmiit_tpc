@@ -109,6 +109,7 @@
 		color:#696969;
 	}
 }
+
 .rec_box{
 	position: relative;
 	align-self: center;
@@ -146,6 +147,12 @@ a.ddmenu:hover{
 
 a.ddmenua:hover, a.ddemenua:link, a.ddmenua:active, a.ddmenua:visited{
 	color:#F0663B !important;
+}
+
+.logos {
+	float: left;
+	width: 20px;
+	height: 20px;
 }
 
 
