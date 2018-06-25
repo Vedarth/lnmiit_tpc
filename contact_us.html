@@ -58,7 +58,19 @@
     	display: none;
     }
 
-  
+    .blurimage{
+    	opacity: 0.5;
+    }
+
+    .clickme{
+    	position: relative;
+    	top:70px;
+    	z-index: 2;
+    	color: white;
+    	font-weight:600;
+    	display: none;
+    	height: 0;
+    }
 
 
 
@@ -106,37 +118,124 @@
    <br>
     <!--TPO-->
     
-      <div class="row align-center grid-x grid-padding-x" style="text-align: center;">
+      <div class="row align-center grid-x grid-padding-x" style="text-align: center;" >
       	<div class=" large-8 medium-4" id="blur">
-        	<img src="images/manujSharma.jpg" class="contact_pic pics" id="tpo" style="border-radius: 50%;height:170px;width: 170px;border:5px solid #bbbcbf;">
-        	<p class="con_head">
-            	<a href="https://www.linkedin.com/in/manuj-sharma-72103880/" target="_blank" style="color: black" class="linkedin">Manuj Sharma</a>
+        	<div class="clickme hide1 clickme1">Click Me</div>
+        	<img src="images/manujSharma.jpg" class="contact_pic pics hide1" id="tpo" style="border-radius: 50%;height:170px;width: 170px;border:5px solid #bbbcbf;">
+           	<p class="con_head">
+            	<a href="https://www.linkedin.com/in/manuj-sharma-72103880/" target="_blank" style="color: black;" class="linkedin">Manuj Sharma</a>
             </p>
    		</div>
-   		
       </div>
       
       	
-      	<div class="hidedivs" id="tpoinfo" style="background: #c5ccd8;border-radius: 25px;margin-top: 2%;width: 42%;margin-left: 30%;">		
+      	<div class="hidedivs callout box2" id="tpoinfo" style="margin-top: 2%;width: 42%;margin-left: 30%;">		
             	<img src="images/manujSharma.jpg" style="height:170px;width: 150px;display: inline-block;float: left;margin-top: 2%;margin-bottom: 2%;margin-left: 7%;">
             	            	
-            		<div style="padding-top:2%;padding-left:45%;font-weight:600;padding-bottom: 2%;">
+            		<div style="padding-top:2%;padding-left:45%;font-weight:500;padding-bottom: 2%;color:black;">
             			<h1>Manuj Sharma</h1>
             			Training and placement Cell Officer
             			<br> 
+            			<a href="https://www.linkedin.com/in/manuj-sharma-72103880/"><i class="fab fa-linkedin" style="font-size:40px;color:blue;"></i></a>
+            			<a><i class="fab fa-facebook" style="font-size:40px;color:blue;"></i></a>
+            			<br>
             			<i class="fas fa-phone"></i> : +91 8696792550
             			<br>
             			<a href="mailto:info.tpc@lnmiit.ac.in" class="email_link" style="color:black;"><i class="far fa-envelope"></i> : tpo@lnmiit.ac.in</a>
             			<br>
-            			<a href="contact_us.html" style="margin-left:80%; color: #F0663B">CLOSE</a>
+            			<a style="margin-left:80%; color: #F0663B;font-weight: bold;" class="close">CLOSE</a>
             		</div> 
         </div>
+         <!-- TPC FACULTY-->
+
+         <!--COORDINATORS-->
+       
+
+
+
             		
-            	
+          <div class="row align-center grid-padding-x grid-x" id="form" >
+    <div class="medium-5 large-5 small-12">  
+        <section class= "Mail_Box">
+              
+              <div class="row responsive">
+                      <!--<div class="small-12 medium-3 columns"><h2> </h2></div>-->
+                  <div class="medium-3 columns" style="color: #F0663B; margin-left: 1.5em "> <h4 style="font-weight: bolder;" class="headings"> Get In Touch</h4>
+                      </div>
+              </div>
+             <div class="row" align="align-left" style=" margin-left:1.5em; margin-right: auto;">           
+               <div class="medium-3 columns">
+                 <form id="test-form">
+                    <label>
+                        <input type = "text" name="Name" id="Name1" placeholder = "Name" required>
+                     </label>
+                                                
+                                             
+                    <label>
+                        <input type = "email" name="Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" id="Email1" placeholder = "Email" required>
+                    </label>
+                    <label><textarea placeholder="Message" name="Message" id="Message1" rows="10"></textarea></label>
+                    <label><button class="button large expanded" type="submit" id="submit-form" style="background-color: #F0663B">Submit</button></label>  
+                   </form>
+                 </div>
+                        
+              </div>
+        </section>
+    </div>
+
+    <div class="medium-7 large-7 small-12">
+      <div id="contact" class="container-fluid bg-grey" style="background-color:#CCC; margin-bottom: 10px">
+        <div class="map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.964304229176!2d75.92133461504544!3d26.936346083117396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dba21e8a1d1c9%3A0x5ab565cce4d44c2b!2sLNMIIT!5e0!3m2!1sen!2sin!4v1507625819530" width="100%"  height="495" frameborder="0" style="padding-left: 2em; padding-right: 1em" align="right" allowfullscreen></iframe>
+           </div>
+        </div>
+    </div>
+    </div>
+
+     <!--Footer-->
+      <footer class="row responsive" style="background-color: #F0663B;" id="footer"><br>
+          <div class="row align-center grid-x" style="margin-bottom: 5%;margin-left: 15px;">
+            <div class="large-3 small-12 columns size">
+              <h6><b>Quick Links</b></h6>
+              <a href="https://www.lnmiit.ac.in/">LNMIIT Home Page</a><br>
+              <a href="recruiters.html">Recruiters </a><br>
+              <a href="cons_stats.html">Statistics</a><br>
+            </div>
+            <div class="large-3 small-12 columns size">
+              <h6><b>Download</b></h6>
+              <a href="http://placements.lnmiit.ac.in/pbl.pdf">Placement Brochure</a><br>
+
+            </div>
+            <div class="large-3 small-12 columns size">
+              <h6><b>Contact</b></h6>
+              Placement Office<br>
+              Guest House<br>
+              The LNM Institute of Information & Technology<br>
+              Rupa ki Nangal, Post Sumel, Via Jamdoli<br>
+              Jaipur-302031</a>
+            </div>
+            <div class="large-3 small-12 columns size">
+              <br>
+              <img src="images/mail_icon.png" style="height: 1.2em"> <a href="mailto:tpo@lnmiit.ac.in" style="color: white;">tpo@lnmiit.ac.in</a><br>
+              <img src="images/phone-icon-orange.png" style="height: 1.5em">+91 141-2689015, 8696792550
+            </div>
+          </div>
+
+          <hr style="color: white">
+          <div class="row align-center grid-x size" style="margin-left:15px;margin-right:15px; ">
+          <div class="large-6 columns">
+                    <p>Copyright 2018. All rights reserved | Placement Cell LNMIIT</p>
+          </div>
+          <div class="large-6 columns">
+            <p align="right">Developers :- Jiten Sadhwani, Vedarth Sharma, Aastha Agarwal, Kritika Singhal</p>
+            
+          </div>
+          </div>
+      </footer>            	
         
 	         
 
-      <!-- TPC FACULTY-->
+     
 
 
       <!--COORDINATORS-->
@@ -192,9 +291,38 @@
       		$("#tpoinfo").show();
       		$("#blur").addClass("actualdivs");
       		$("#navbar").addClass("actualdivs");
-
-      		
+      		$("#form").addClass("actualdivs");
+      		$("#footer").addClass("actualdivs");
       	});
+
+      	$(".close").on("click",function(){
+      		$("#tpoinfo").hide();
+      		$("#blur").removeClass("actualdivs");
+      		$("#navbar").removeClass("actualdivs");
+      		$("#form").removeClass("actualdivs");
+      		$("#footer").removeClass("actualdivs");
+
+      	});
+      	$(".clickme1").on("click",function(){
+      		
+      		$("#tpoinfo").show();
+      		$("#blur").addClass("actualdivs");
+      		$("#navbar").addClass("actualdivs");
+      	});
+
+      	$(".hide1").hover(function(){
+      		$(".clickme1").toggle();
+      		$(".pics").toggleClass("actualdivs");
+      	});
+
+      	$(".hide2").hover(function(){
+      		$(".clickme2").toggle();
+      		$(".pics").toggleClass("actualdivs");
+      	});
+      	
+
+
+       	
       </script>
 
      
