@@ -162,50 +162,53 @@
           </nav>
         </div>
       </div>
-      <div class="row align-center">
+     
+  </div>
+    <div class="small-12 medium-3 large-3 column text-center align-center " >
+
+          <br><br>
+          <h5 class="headings" >Updates</h5>
+          <hr style="width: 80%; margin-top: -1rem">
+          <div class="boxu" style="">
+          <div class="container paras scroll "  >
+            <ul data-smooth-scroll style="list-style:none; margin-bottom: -1rem">
+               <li id="first" >
+                <p><a href="updates.html" style="color:#696969">Update1: Write text here.</a></p> 
+              </li>
+               <li id="second">
+                <p><a href="updates.html" style="color:#696969">Update2: Write text here.</a></p> 
+              </li>
+               <li id="third">
+                <p><a href="updates.html" style="color:#696969">Update3: Write text here. </a></p> 
+              </li>
+               <li id="fourth">
+                <p><a href="updates.html" style="color:#696969">Update4: Write text here. </a></p> 
+              </li>
+               <li id="fifth" >
+                <p><a href="updates.html" style="color:#696969">Update5: Write text here. </a></p> 
+              </li>
+               <li id="sixth" >
+                <p><a href="updates.html" style="color:#696969">Update6: Write text here.  </a></p> 
+              </li>
+               <li id="seventh" >
+                <p><a href="updates.html" style="color:#696969">Update7: Write text here. </a></p> 
+              </li>
+           </ul>
+           
+          </div>
+        
+        </div>   <p class="paras" style="text-align: right; "><a href="updates.html" style="color: #F0663B; margin-top: -10rem"> More..</a></p>
+    </div>
+
+
+</div>
+ <div class="row align-center">
          <h4 class="headings">About Us</h4>
                             
           <p class="paras" style="text-align: justify;"> The Training and Placement Cell of the institute handles all aspects of placements at LNMIIT for the students of all departments. It is a student body, directly under the supervision of the honourable Director, headed by the Training and Placement Officer and guided by the Faculty Advisors .The Cell stands for branding the outlook of the university to the corporate and the industry.<br> The Training and Placement Officer, Coordinators and the student representatives handle various crucial tasks in the Cell like reaching out to companies, scheduling and executing placement related activities and carrying out all offcial communication with recruiters and students. The Cell strives to match recruiter expectations with students’ aspirations. The team of student representatives coordinate the activities to ensure compliance with various institute policies and company offcials, who execute coordination with their recruiting organisations. Over the years the Cell has gone from strength to strength in achieving outstanding placements at LNMIIT and will continue to do so in the years to come.
           </p>
       
     </div>
-  </div>
-
-    <div class="small-12 medium-3 large-3 column text-center align-center " style="float: right; height: relative;">
-
-          <br><br>
-          <h5 class="headings" >Updates</h5>
-          <hr style="width: 80%; margin-top: -1rem">
-          <div class="boxu" style="">
-          <div class="container paras scroll " style="float: left;" >
-            <ul data-smooth-scroll style="list-style:none; margin-bottom: -1rem">
-               <li id="first" style="height: 5rem; overflow: hidden;">
-                <p><a href="updates.html" style="color:#696969">Update1: Write text here.</a></p> 
-              </li>
-               <li id="second" style="height: 5rem; overflow: hidden;">
-                <p><a href="updates.html" style="color:#696969">Update2: Write text here.</a></p> 
-              </li>
-               <li id="third" style="height: 5rem; overflow: hidden;">
-                <p><a href="updates.html" style="color:#696969">Update3: Write text here. </a></p> 
-              </li>
-               <li id="fourth" style="height: 5rem; overflow: hidden;">
-                <p><a href="updates.html" style="color:#696969">Update4: Write text here. </a></p> 
-              </li>
-               <li id="fifth" style="height: 5rem; overflow: hidden;">
-                <p><a href="updates.html" style="color:#696969">Update5: Write text here. </a></p> 
-              </li>
-               <li id="sixth" style="height: 5rem; overflow: hidden;">
-                <p><a href="updates.html" style="color:#696969">Update6: Write text here.  </a></p> 
-              </li>
-               <li id="seventh" style="height: 5rem; overflow: hidden;">
-                <p><a href="updates.html" style="color:#696969">Update7: Write text here. </a></p> 
-              </li>
-           </ul>
-           
-          </div>
-        </div> <p class="paras" style="text-align: right; "><a href="updates.html" style="color: #F0663B"> More..</a></p>
-</div>
-</div>
   <div class="row align-center">
             <h4 class="headings">From the director's desk</h4>
           
@@ -466,26 +469,7 @@ $(document).ready(function() {
             });
       </script>
 
-      <!-- Updates scroller-->
-      <script type="text/javascript">
-        $(function(){
-            var tickerLength = $('.container ul li').length;
-            var tickerHeight = $('.container ul li').outerHeight();
-            $('.container ul li:last-child').prependTo('.container ul');
-            $('.container ul').css('marginTop',-tickerHeight);
-            function moveTop(){
-              $('.container ul').animate({
-                top : -tickerHeight
-              },600, function(){
-               $('.container ul li:first-child').appendTo('.container ul');
-                $('.container ul').css('top','');
-              });
-             }
-            setInterval( function(){
-              moveTop();
-            }, 3000);
-        });
-      </script>
+      
       
       <script type="text/javascript">
         function myfun() {
@@ -536,24 +520,23 @@ $(document).ready(function() {
 
       <script type="text/javascript">
         (function(){
+            function scroller() {
 
-      function scroller() {
+              var scroll = $('div.scroll');
+              var height = scroll.height(); 
+          
+              var topAdj = -height-30; 
+          
+               scroll.animate({
+               'top' : [topAdj, 'linear'] 
+                }, 8000, function(){
+                 scroll.css('top', 80); 
+                scroller(); 
+            });}
+        
+            scroller();
 
-      var scroll = $('div.scroll');
-      var height = scroll.height(); 
-  
-      var topAdj = -height-30; 
-  
-       scroll.animate({
-       'top' : [topAdj, 'linear'] 
-        }, 8000, function(){
-         scroll.css('top', 80); 
-        scroller(); 
-      });}
-  
-      scroller();
-
-      })();
-      </script>>
+        })();
+      </script>
   </body>
 </html>
