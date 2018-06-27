@@ -232,7 +232,7 @@
                                                 
                                              
                     <label>
-                        <input type = "email" name="Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" id="Email1" placeholder = "Email" required>
+                        <input type = "email" name="Email" id="Email1" placeholder = "Email" required>
                     </label>
                     <label><textarea placeholder="Message" name="Message" id="Message1" rows="10"></textarea></label>
                     <label><button class="button large expanded" type="submit" id="submit-form" style="background-color: #F0663B">Submit</button></label>  
@@ -315,7 +315,11 @@
     var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbwATt-9_gCoCYYkcXylHvsdSBgCaS-1yllhqNPpWXU1iBBgl8_Y/exec'
     
+
     $('#submit-form').on('click', function(e) {
+    var mess;
+    if (window.navigator.onLine == true) {
+     //mess =  "Your form has been sucessfully submitted. Thanks for your feedback.";
 
     e.preventDefault();
     var jqxhr = $.ajax({
@@ -324,13 +328,23 @@
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-  alert("Your form has been sucessfully submitted. Thanks for your feedback."),
+  alert("Your form has been sucessfully submitted. Thanks for your feedback.")
+  ,
   $('#Name1').val(''),
   $('#Email1').val(''),
   $('#Message1').val('')
   );
-  
+
+}
+  else {
+      alert("You are currently offline. Kindly check your internet connection.");
+  }
+
 })
+
+
+    
+
     
       </script>
      
