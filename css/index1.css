@@ -24,7 +24,7 @@
     background-color: #fff!important;
   }
       .first{
-      	filter: !important blur(0px);
+        filter: !important blur(0px);
         -webkit-filter: !important blur(0px);
       }
 
@@ -143,7 +143,9 @@
       right: 15px;
     }
     .paras{
-      color: #696969; text-align: left;font-size: 16px; font-weight:500;
+      color: green;
+      text-align:left;
+      font-size: 16px;font-weight:500;
     }
   
     .card-image{
@@ -171,6 +173,7 @@
    
    .scroll {
   position: absolute;
+  overflow: hidden;
   }
 
 .scroll li{
@@ -179,9 +182,23 @@
 
 .boxu {
   margin: -2px;
-  padding-bottom: 30em;
+  padding-bottom: 23em;
   position: relative;
   overflow: hidden;
   
   
+}
+
+#verticalScroller {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#verticalScroller > div{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    overflow:hidden;
 }
