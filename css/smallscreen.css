@@ -211,7 +211,7 @@
   }
   
   .imgDir{
-  	align-self: center; margin-left: 5em;
+  	align-self: left; margin-left: 2em;
   }
 
 .docs-example-orbit-slide {
@@ -241,5 +241,7 @@
   .orbit-slide:nth-of-type(4) & {
     background: lightseagreen;
   }
+
 }
 }
+
