@@ -65,7 +65,7 @@
 
       }
       #footrow{
-        margin-bottom:5%;margin-left: 20px;margin-left: 0px;margin-right: 0px; background-color: #F0663B; padding-right: 0px; 
+        margin-bottom:5%; margin-left: 20px;margin-left: 0px;margin-right: 0px; background-color: #F0663B; padding-right: 0px; 
       }
       #foota{
         color: white;
@@ -103,8 +103,10 @@
     }
 
     .first .top-bar{
-      box-shadow: 1.5px 1.5px 8px #F0663B;
-      background-color: #e6e6e6;
+      -webkit-box-shadow: 0 4px 2px -2px black;
+      -moz-box-shadow: 0 4px 2px -2px black;
+          box-shadow: 0 4px 2px -2px #F0663B;
+      background-color: transparent;
      
      padding: 20px;
      
@@ -165,10 +167,8 @@
       background-color:#CCC; height: 1px; border: 0;
     }
     .logo-sl {
-      border: 1px solid #F0663B;
-      margin-right: 10px;
-      margin-right: 10px;
-      border-radius: 2px;
+      
+      
     }
    
    .scroll {
