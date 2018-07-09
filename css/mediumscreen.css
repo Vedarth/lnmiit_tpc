@@ -159,13 +159,23 @@
 	a.ddmenu:hover{
 		background-color: #E85212;
 	    color: white !important;
+	    
+	    font-size: 15px;
+	    
 	}
 	 a.ddmenu:link, a.ddmenu:active, a.ddmenu:visited{
 	 	color:#F0663B ;
+	 	
+	 	font-size: 15px;
+	 	
 	 }
 
 	a.ddmenua:hover, a.ddemenua:link, a.ddmenua:active, a.ddmenua:visited{
 		color:#F0663B !important;
+		
+		font-size: 15px;
+
+
 	}
 
 
@@ -232,4 +242,23 @@
 .stats_img{
 	margin-top: 20px
 }
+.orbit{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.director-row-res{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.footer-links-2{
+    text-align:center;
+   
+  }
+  .menu-tags{
+      
+      font-size: 15px;
+      
+    }
+ }
+
 }

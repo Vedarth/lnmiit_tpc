@@ -239,15 +239,25 @@
   }
   .footer-links-2{
     text-align:center;
-    padding-top: 25px;
+    
   }
 
- 
-
-  
-  .director-res
+ .director-res
   {
     text-align: center;
   }
+  .stats2-res{
+      margin-top: 50px;
+      text-align: center;
+
+    }
+    .click-here-res{
+      margin-right: 0px !important;
+    }
+      .orbit{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 }
 
