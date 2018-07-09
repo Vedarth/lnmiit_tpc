@@ -138,7 +138,15 @@
 		color:#696969;
 		align-content: center;
 		align-items: center;
+		font-size: 14px;
+    	padding-left: 5px;
+    	padding-right: 5px;
 	}
+	.paras-res{
+    padding-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 	.rec_pic {
 		border-radius: 100%;
 		border-color: #F0F0F0;
@@ -224,5 +232,22 @@
 .stats_img{
 	height: 200px;
 }
+.footer-links{
+
+    padding-top: 25px;
+    text-align: center;
+  }
+  .footer-links-2{
+    text-align:center;
+    padding-top: 25px;
+  }
+
+ 
+
+  
+  .director-res
+  {
+    text-align: center;
+  }
 }
 

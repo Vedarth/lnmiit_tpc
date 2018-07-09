@@ -120,6 +120,11 @@
 		margin-right: 5em;
 		  
 	}
+	.paras-res{
+    padding-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 
 	.rec_box{
 		position: relative;
@@ -136,6 +141,9 @@
 		color:#696969;
 		align-content: center;
 		align-items: center;
+		font-size: 14px;
+    	padding-left: 5px;
+    	padding-right: 5px;
 	}
 	.rec_pic {
 		border-radius: 100%;
