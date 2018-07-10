@@ -123,6 +123,16 @@
     
   }
 
+  
+    .first .top-bar{
+      -webkit-box-shadow: 0 4px 2px -2px black;
+      -moz-box-shadow: 0 4px 2px -2px black;
+      box-shadow: 0 4px 2px -2px #F0663B;
+      background-color: transparent;
+      height: 4rem;
+    }
+
+
   .rec_box{
     position: relative;
     align-self: center;
@@ -131,6 +141,20 @@
     overflow-wrap: break-word;
     height: 100%
   }
+   .orbit-caption{
+    font-size:14px;
+
+  }
+  .footer-links{
+
+    padding-top: 25px;
+    text-align: center;
+  }
+  .footer-links-2{
+    text-align:center;
+    padding-top: 25px;
+  }
+  
 
   .email_link{
     color:#696969;
@@ -139,6 +163,14 @@
     color:#696969;
     align-content: center;
     align-items: center;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .paras-res{
+    padding-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
   .rec_pic {
     border-radius: 100%;
@@ -218,16 +250,32 @@
 }
 .orbit-image{
   height: 15rem;
+  
 }
 .stats_img{
   height: 200px;
-  align-self: center;
-  margin-left: 2rem
+  margin-bottom: 50px;
+
 }
   .imgDir{
-  	align-self: center;
-  	text-align: center;
+    align-self: center;
+    text-align: center;
     height: 10rem;
-    margin-left: 5rem
-  	}
- } 
+    
+    }
+    .director-res{
+      text-align: center;
+    }
+    .click-here-res{
+      margin-right: 0px !important;
+    }
+    .stats2-res{
+      margin-top: 50px;
+      text-align: center; 
+
+    }
+    .orbit{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+     } 

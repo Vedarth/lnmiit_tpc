@@ -121,6 +121,21 @@
 		  
 	}
 
+	
+    .first .top-bar{
+      -webkit-box-shadow: 0 4px 2px -2px black;
+      -moz-box-shadow: 0 4px 2px -2px black;
+      box-shadow: 0 4px 2px -2px #F0663B;
+      background-color: transparent;
+      height: 4rem;
+    }
+
+	.paras-res{
+    padding-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
 	.rec_box{
 		position: relative;
 		align-self: center;
@@ -136,6 +151,9 @@
 		color:#696969;
 		align-content: center;
 		align-items: center;
+		font-size: 14px;
+    	padding-left: 5px;
+    	padding-right: 5px;
 	}
 	.rec_pic {
 		border-radius: 100%;
@@ -151,13 +169,23 @@
 	a.ddmenu:hover{
 		background-color: #E85212;
 	    color: white !important;
+	    
+	    font-size: 15px;
+	    
 	}
 	 a.ddmenu:link, a.ddmenu:active, a.ddmenu:visited{
 	 	color:#F0663B ;
+	 	
+	 	font-size: 15px;
+	 	
 	 }
 
 	a.ddmenua:hover, a.ddemenua:link, a.ddmenua:active, a.ddmenua:visited{
 		color:#F0663B !important;
+		
+		font-size: 15px;
+
+
 	}
 
 
@@ -224,4 +252,23 @@
 .stats_img{
 	margin-top: 20px
 }
+.orbit{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.director-row-res{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.footer-links-2{
+    text-align:center;
+   
+  }
+  .menu-tags{
+      
+      font-size: 15px;
+      
+    }
+ }
+
 }

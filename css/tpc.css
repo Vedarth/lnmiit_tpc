@@ -127,6 +127,15 @@
 	text-align: justify;
     text-justify: inter-word;
 }
+
+.first .top-bar{
+  -webkit-box-shadow: 0 4px 2px -2px black;
+  -moz-box-shadow: 0 4px 2px -2px black;
+      box-shadow: 0 4px 2px -2px #F0663B;
+  background-color: transparent;
+ height: 4rem;
+}
+
 .rec_pic {
 	border-radius: 100%;
 	border-color: #F0F0F0;
