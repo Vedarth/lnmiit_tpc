@@ -133,6 +133,16 @@
 		  
 	}
 
+	
+    .first .top-bar{
+      -webkit-box-shadow: 0 4px 2px -2px black;
+      -moz-box-shadow: 0 4px 2px -2px black;
+      box-shadow: 0 4px 2px -2px #F0663B;
+      background-color: transparent;
+      height: 4rem;
+    }
+
+
 	.rec_box{
 		position: relative;
 		align-self: center;
