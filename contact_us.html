@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Placement Cell, LNMIIT</title>
     <link rel="icon" href="https://www.lnmiit.ac.in/images/favicon.ico">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <!--<link rel="stylesheet" href="css/tpc.css">-->
+    <link rel="stylesheet" href="css/tpc.css">
     <link rel="stylesheet" href="css/widescreen.css">
     <link rel="stylesheet" href="css/smallscreen.css">
     <link type="text/css" media="screen" rel="stylesheet" href="responsive-tables.css" />
@@ -16,12 +17,14 @@
     <script src="js/vendor/jquery.js"></script>
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>  
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
     <script src="js/jquery.serialize-object.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    
     <style type="text/css">
           .full-width {
             max-width: 100%;
@@ -42,10 +45,104 @@
     .Mail_Box{
       align-self: center;
     }
+
+    .actualdivs{
+    	-webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    pointer-events: none;
+    }
+
+    .hidedivs{
+    	display: none;
+    }
+
+    .blurimage{
+    	opacity: 0.5;
+    }
+
+    .clickme{
+    	position: relative;
+    	top:70px;
+    	z-index: 2;
+    	color: white;
+    	font-weight:600;
+    	display: none;
+    	height: 0;
+
+    }
+    .bgDivs{
+      background: #F0663B;
+      color:white;
+    }
+    .linkedin{
+      color:black;
+      font-weight: bold;
+    }
+    
+    @media screen and (max-width: 1500px) {
+    .bigname{
+    	margin-right: 0% !important;
+    }
+    .midname{
+    	margin-right: 7% !important;
+    }
+     .pics{
+     	margin-left: 2% !important;
+     	margin-top: 5%;
+     }
+     .hidedivs{
+     	top:10% !important;
+     }
+	   
+
+	}
+	@media screen and (max-width: 1300px) {
+    .para{
+        margin-right: 0 !important;
+        margin-left: 13%;
+     }
+     .pics{
+     	margin-left: 25% !important;
+     	margin-top: 5%;
+     }
+     .mem-row-last{
+     	margin-left: 20% !important;
+     }
+     .hidedivs{
+     	top:5% !important;
+     }
+	}
+    @media screen and (max-width: 600px) {
+    .para{
+        margin-right: 0 !important;
+        margin-left: 13%;
+     }
+     .pics{
+     	margin-left: 25% !important;
+     	margin-top: 5%;
+     }
+     .mem-row-last{
+     	margin-left: 20% !important;
+     }
+     .box2{
+     	left:2% !important;
+     }
+     .hidedivs{
+     	top:7% !important;
+     }
+
+	}
+	
+
+
+
     </style>
   </head>
   <body onload="myfun()">
-<div class="row full-width" style="box-shadow: 1.5px 1.5px 8px #F0F0F0;">
+<div class="row full-width" style="box-shadow: 1.5px 1.5px 8px #F0F0F0;" id="navbar">
   <div class="large-12 columns">
     <div class="first">
       <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium" style="background-color: white;">
@@ -84,97 +181,922 @@
 </div>
 
    <br>
-    <!--TPO-->
-      <div class="row align-center grid-x grid-padding-x">
+    <!--TPO-->	
+
         
-        <div class="callout large-4 medium-4 box ">
-            <div class="large-3 column "> <div class="row align-center grid-x"><div class="large-12"><img src="images/manujSharma.jpg" class="contact_pic"></div></div></div>
-            <div class="large-9 column"><p class="con_head"><a href="https://www.linkedin.com/in/manuj-sharma-72103880/" target="_blank" style="color: black">Manuj Sharma</a></p><p class="con_data">Training and Placement cell Officer<br><img src="images/phone.png">+91 8696792550<br><img src="images/email.png"><a href="mailto:info.tpc@lnmiit.ac.in" class="email_link">tpo@lnmiit.ac.in</a> </p></div>
-        </div>
+    <div class=" row align-center grid-x grid-padding-x blur" style=" margin: 0px;">		
+    		<div class="callout cont " style="text-align: center; margin: 1%">
+	            <div  style="float: left; margin-right: 30px;">
+	            	<img class="center" id="rnd_pic" src="members images/manujSharma1.jpg" style="object-fit: cover;">
+	        	</div>
+	            	<div class="clearfix" style="letter-spacing: 1.2px;line-height:1.7em;  text-align: left; float: right;">
+	            			<h3 style="margin-bottom: 0; color: black;">Manuj Sharma</h3>
+	            			Training and Placement Cell Officer
+	            			<br> 
+	            			<a href="https://www.linkedin.com/in/manuj-sharma-72103880/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077b5;"></i></a>
+	            			
+	            			<br>
+	            			<i class="fas fa-phone" style="color:black"></i> : +91 8696792550
+	            			<br>
+	            			<a href="mailto:info.tpc@lnmiit.ac.in" class="email_link" style=""><i class="far fa-envelope" style="color:black"></i> : tpo@lnmiit.ac.in</a>
+	            			<br>
+	               	</div> 
+            </div>
+    </div>
+
+         <!-- TPC FACULTY-->
+
+         <!--COORDINATORS-->
+    <div class="row align-center grid-x grid-padding-x blur" style="margin: 0px;">
+    	<div class=" callout cont2" >
+    		<img class="center" src="members images/sumit.jpeg" id="rnd_pic2" style="object-fit: cover;">
+	        <div style="letter-spacing: 1.2px;line-height:1.7em;">
+	            <h4 style="margin-bottom: 0;font-weight:500; color: black;">Sumit Madhwani</h4>
+	            			Student Coordinator
+	            <br> 
+	            <a href="https://www.linkedin.com/in/sumitmadhwani/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077b5;"></i></a>
+	            <a href="https://www.facebook.com/sumitmadhwani96" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3b5998"></i></a>
+	            <br>
+	            <i class="fas fa-phone" style="color:black"></i> : +91 70073 66879
+	            <br>
+	            <a href="mailto:y14uc006@lnmiit.ac.in" class="email_link" style=""><i class="far fa-envelope" style="color:black"></i> : info.tpc@lnmiit.ac.in</a>
+	            <br>
+	        </div>
+    	</div>
+    	<div class=" callout cont2" >
+    		<img class="center" src="members images/jiten.jpg" id="rnd_pic2" style="object-fit: cover;">
+	        <div style="letter-spacing: 1.2px;line-height:1.7em;">
+	            <h4 style="margin-bottom: 0;font-weight:500; color: black;">Jiten Sadhwani</h4>
+	            			Student Coordinator
+	            <br> 
+	            <a href="https://www.linkedin.com/in/jiten-singh-sadhwani-1b109b10b/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077b5;"></i></a>
+	            <a href="https://www.facebook.com/sadhwani.jiten" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3b5998"></i></a>
+	            <br>
+	            <i class="fas fa-phone" style="color:black"></i> : +91 94082 24422
+	            <br>
+	            <a href="mailto:y14uc269@lnmiit.ac.in" class="email_link" style=""><i class="far fa-envelope" style="color:black;"></i> : info.tpc@lnmiit.ac.in</a>
+	            <br>
+	        </div>
+    	</div>
+    	<div class="callout cont2" >
+    		<img class="center" src="members images/shreyansh.jpg" id="rnd_pic2" style=" object-fit: cover;">
+	        <div style="letter-spacing: 1.2px;line-height:1.7em;">
+	            <h4 style="margin-bottom: 0;font-weight:500; color: black;">Shreyansh Gupta</h4>
+	            			Student Coordinator
+	            <br> 
+	            <a href="https://www.linkedin.com/in/shreyanshgupta-20/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077b5;"></i></a>
+	            <a href="https://www.facebook.com/shreyansh.gupta.20" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3b5998"></i></a>
+	            <br>
+	            <i class="fas fa-phone" style="color:black"></i> : +91 85599 90903
+	            <br>
+	            <a href="mailto:y14uc269@lnmiit.ac.in" class="email_link" style=""><i class="far fa-envelope" style="color:black"></i> : info.tpc@lnmiit.ac.in</a>
+	            <br>
+	        </div>
+    	</div>
+    </div>
+    	<div style="margin-top: 3%;text-align: center;color:#F0663B;">
+      		<h1 class="blur">Members</h1>
+      	</div>
+    <!-- ROW 1-->
+    <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0.2%;">
+
+        <div class=" large-2 medium-6  small-7 blur box2 column"  style="border-radius:25px;margin:1%;" id="aastha">
+          <img src="members images/aastha.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 17%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Aastha Agarwal</a>
+              <br>
+              Technical Team
+            </p>
+      	</div>
+      	<div class=" large-2 medium-6 small-7 blur box2 column"  style="border-radius:25px;margin:1%;" id="kritika">
+          <img src="members images/kritika.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 17%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Kritika Singhal</a>
+              <br>
+              Technical Team
+            </p>
+      </div>
+	  <div class=" large-2 medium-6 small-7 blur box2 column"  style="border-radius:25px;margin:1%;" id="vedarth">
+          <img src="members images/vedarth.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 13%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Vedarth Sharma</a>
+              <br>
+              Technical Team
+            </p>
       </div>
 
-      <!-- TPC FACULTY-->
+      <div class=" large-2 medium-6 small-7 blur box2 column"  style="border-radius:25px;margin:1%;" id="tushar">
+          <img src="members images/tushar.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 20%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Tushar Bansal</a>
+              <br>
+              Technical Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2 column"  style="border-radius:25px;margin:1%;" id="atharva">
+          <img src="members images/atharva.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 15%;margin-top: 10%;" class="para midname">
+              <a  target="_blank" class="linkedin">Atharva Sharma</a>
+              <br>
+              Technical Team
+            </p>
+      </div>
+        
+    </div> 
 
-
-      <!--COORDINATORS-->
-
-      <div class="row align-center grid-x grid-padding-x ">
-        <div class="callout large-4 medium-4 box3 " >
-            <div class="large-3 column "> <img src="images/sumit.jpeg" class="contact_pic"></div>
-            <div class="large-9 column "><p class="con_head"><a href="https://www.linkedin.com/in/sumitmadhwani/" target="_blank" style="color: black">Sumit Madhwani</a></p><p class="con_data">Student Coordinator<br><img src="images/phone.png">+91 70073 66879<br><img src="images/email.png"><a href="mailto:y14uc006@lnmiit.ac.in" class="email_link">Email: info.tpc@lnmiit.ac.in</a> </p></div>
-        </div>
-        <div class="callout large-4 medium-4 box ">
-            <div class="large-3 column "> <img src="images/jiten.JPEG" class="contact_pic"></div>
-            <div class="large-9 column "><p class="con_head"><a href="https://www.linkedin.com/in/jiten-singh-sadhwani-1b109b10b/" target="_blank" style="color: black">Jiten Sadhwani</a></p><p class="con_data">Student Coordinator<br><img src="images/phone.png">+91 94082 24422<br><img src="images/email.png"><a href="mailto:y14uc269@lnmiit.ac.in" class="email_link">Email: info.tpc@lnmiit.ac.in</a> </p></div>
-        </div>
+      <div class="row align-center grid-x hidedivs" id="arushiinfo" style="position:absolute;z-index: 100;width: 100%;top:185%;">
+          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
+            <img src="members images/arushi.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 7%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Arushi Gaur</h5>
+                      Database Team
+                      <br>Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/arushi-gaur-33225966/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/arushi.gaur.359" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a> 
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close2">CLOSE</a>
+                </div>
+            </div>
+          </div>
       </div>
 
-      <div class="row align-center grid-x grid-padding-x">
-      <div class="callout large-10 medium-10 box1">
-          <h4 class="headings" style="text-align: center;color: #F0663B; font-weight: bolder;">Members</h4>
-       <table class="paras ">
-          <thead style="color:#404040">
-          </thead>
-          <tbody >
-            <tr>
-              <td>Uma Bhatia</td>
-              <td>Shreyansh Gupta</td>
-              <td>Aastha Agarwal</td>
-              <td>Mehul Sharma</td>
-            </tr>
-            <tr>
-              <td>Meetasha Gaur</td>
-              <td>Arushi Gaur</td>
-              <td>Kritika Singhal</td>
-              <td>Vaibhav Munjal</td>
-              
-            </tr>
-            <tr>
-              <td>Sanjit Jain</td>
-              <td>Priyansi Singh</td>
-              <td>Vedarth Sharma</td>
-              <td>Avinash Widhani</td>
-            </tr>
-               <tr>
-              <td>Arushi Maheshwari</td>
-              <td>Apurv Jain</td>
-              <td>Tushar Bansal</td>
-              <td>Parkavi</td>
-            </tr>
-               <tr>
-              <td>Monil Narang</td>
-              <td>Siddharth Jain</td>
-              <td>Atharva Sharma</td>
-              <td>Rishabh Chaturvedi</td>
-            </tr>
-               <tr>
-              <td>Urvika Agrawal</td>
-              <td>Abhishek Yadav</td>
-              <td>Nischal Sharma</td>
-              <td>Tapish Gupta</td>
-            </tr>
-             <tr>
-              <td>RajRupa Roy</td>
-              <td>Arihant Jain</td>
-              <td>Saransh Bankiwal</td>
-              <td></td>
-            </tr>
-             <tr>
-              <td>Simran Gupta</td>
-              <td>Kanishka Jain</td>
-              <td>Honey Agrawal</td>
-              <td></td>
-            </tr>
-          </tbody>
-      </table>
+      <div class="row align-center grid-x hidedivs" id="apurvinfo" style="position:absolute;z-index: 10;width: 100%;top:185%;">
+          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
+            <img src="members images/apurv.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Apurv Jain</h5>
+                      Database Team
+                      <br>Pre Final Year
+                      <br>B.Tech CCE
+                <div>
+                  <a href="https://www.linkedin.com/in/apurv-jain-b8b8b113b/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/aj1805" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close3">CLOSE</a>
+                </div>
+            </div>
+          </div>
       </div>
+
+      <div class="row align-center grid-x hidedivs" id="priyanshiinfo" style="position: absolute;z-index: 10;width: 100%;top:185%;">
+          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
+            <img src="members images/priyanshi.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 3%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Priyansi Singh</h5>
+                      Database Team
+                      <br>Pre Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/priyansi-singh-12b698145" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/priyansi.singh.7547" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close4">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="siddharthinfo" style="position: absolute;z-index: 10;width: 100%;top:185%;">
+          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
+            <img src="members images/siddharth.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Siddharth Jain</h5>
+                      Database Team
+                      <br>Pre Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/siddharth-jain-964b7a12b" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/siddharth.jain.58323" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close5">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="abhishekinfo" style="position: absolute;z-index: 10;width: 100%;top:203%;">
+          
+          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
+            
+            <img src="members images/abhishek.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black">Abhishek Yadav</h5>
+                      Database Team
+                      <br>Sophomore Year
+                      <br>B.Tech ECE
+                <div>
+                  <a href="https://www.linkedin.com/in/abhishek-yadav-220a35150/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100003851232729" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close6">CLOSE</a>
+                </div>
+            </div>
+            
+          </div>
+          
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="arihantinfo" style="position: absolute;z-index: 10;width: 100%;top:203%;">
+          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
+            <img src="members images/arihant.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Arihant Jain</h5>
+                      Database Team
+                      <br>Sophomore Year
+                      <br>B.Tech ECE
+                <div>
+                  <a href="https://www.linkedin.com/in/arihant-jain-386832153/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/ArryJainArt" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close7">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="kanishkainfo" style="position: absolute;z-index: 10;width: 100%;top:203%;">
+          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
+            <img src="members images/kanishka.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Kanishka Jain</h5>
+                      Database Team
+                      <br>Sophomore Year
+                      <br>B.Tech CSE
+                <div>
+                  
+                  <a href="https://www.facebook.com/kanishka.jain.1485" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close8">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="saranshinfo" style="position: absolute;z-index: 10;width: 100%;top:203%;">
+          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
+            <img src="members images/saransh.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 3%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Saransh Bankiwal</h5>
+                      Database Team
+                      <br>Sophomore Year
+                      <br>B.Tech ECE
+                <div>
+                  <a href="https://www.linkedin.com/in/saransh-bankiwal-52a17515b/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/saransh.bankiwal" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close9">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="mehulinfo" style="position: absolute;z-index: 10;width: 100%;top:133%;">
+          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
+            <img src="members images/mehul.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h4 style="margin-bottom: 0;font-weight:500;color: black;">Mehul Sharma</h4>
+                      Pitching Team
+                      <br>Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/mehul-sharma-454b4210a/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/mehulsharma09" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close10">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="meteeshainfo" style="position:absolute;z-index: 10;width: 100%;top:133%;">
+          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
+            <img src="members images/meetesha.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Meetasha Gaur</h5>
+                      Pitching Team
+                      <br>Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/meetasha-gaur-177604120/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/meetasha.gaur" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close11">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="umainfo" style="position:absolute;z-index: 10;width: 100%;top:133%;">
+          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
+            <img src="members images/uma.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 10%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Uma Bhatia</h5>
+                      Pitching Team
+                      <br>Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/uma-bhatia-2963b4107/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close12">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="arushiminfo" style="position:absolute;z-index: 10;width: 100%;top:133%;">
+          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
+            <img src="members images/arushim.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h6 style="margin-bottom: 0;font-weight:600;color: black;font-size: 1.1em">Arushi Maheshwari</h6>
+                      Pitching Team
+                      <br>Pre Final Year
+                      <br>B.Tech ECE
+                <div>
+                  <a href="https://www.linkedin.com/in/arushi-maheshwari-105693145" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/arushi.maheshwari.94" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close13">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+       <div class="row align-center grid-x hidedivs" id="monilinfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
+            <img src="members images/monil.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Monil Narang</h5>
+                      Pitching Team
+                      <br>Pre Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/monil-narang-244276131/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/monilnarang10" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close14">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="rajrupainfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
+            <img src="members images/rajrupa.jpg" style="width: 130px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h6 style="margin-bottom: 0;font-weight:600;color: black;">Rajrupa Roy Chowdhury</h6>
+                      Pitching Team
+                      <br>Pre Final Year
+                      <br>B.Tech ECE
+                <div>
+                  <a href="https://www.linkedin.com/in/rajrupa-roy-chowdhury-7b2774136" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/rajrupa.roychowdhury" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close15">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="sanjitinfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
+            <img src="members images/sanjit.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h4 style="margin-bottom: 0;font-weight:500;color: black;">Sanjit Jain</h4>
+                      Pitching Team
+                      <br>Pre Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/sanjit-jain-45234612b" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/sanjitjain2" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close16">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="simraninfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
+            <img src="members images/simran.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h4 style="margin-bottom: 0;font-weight:500;color: black;">Simran Gupta</h4>
+                      Pitching Team
+                      <br>Pre Final Year
+                      <br>B.Tech ME
+                <div>
+                  <a href="https://www.linkedin.com/in/simran-gupta-aa87a7143/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/simran.gupta.718689" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close17">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="urvikainfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
+            <img src="members images/urvika.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Urvika Agrawal</h5>
+                      Pitching Team
+                      <br>Pre Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/urvika-agrawal-b72902129/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close18">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="avinashinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
+            <img src="members images/avinash.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Avinash Widhani</h5>
+                      Pitching Team
+                      <br>Pre Final Year
+                      <br>B.Tech ME
+                <div>
+                  <a href="https://www.linkedin.com/in/awidhani/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/avinash.widhani" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close19">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="vaibhavinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
+            <img src="members images/vaibhav.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Vaibhav Munjal</h5>
+                      Pitching Team
+                      <br>Pre Final Year
+                      <br>B.Tech ECE
+                <div>
+                  <a href="https://www.linkedin.com/in/vaibhav-munjal-222022119/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://m.facebook.com/profile.php?id=100002226782232&ref=content_filter" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close20">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="honeyinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
+            <img src="members images/honey.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Honey Agrawal</h5>
+                      Pitching Team
+                      <br>Sophomore Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/honey-agrawal-a75518146/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/honey.agrwl.737" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close21">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="parkaviinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
+            <img src="members images/parkavi.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">K. Parkavi</h5>
+                      Pitching Team
+                      <br>Sophomore Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/parkavi-k-494280152/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/parkavi.k.319" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close22">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="rishabhinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
+            <img src="members images/rishabh.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h6 style="margin-bottom: 0;font-weight:600;color: black;font-size: 1em;">Rishabh Chaturvedi</h6>
+                      Pitching Team
+                      <br>Sophomore Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/rishabh-chaturvedi-326107152" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/rishabh.chaturvedi.75?refid=8" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close23">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="tapishinfo" style="position:absolute;z-index: 10;width: 100%;top:185%;">
+          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
+            <img src="members images/tapish.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;margin-right: 3%;">Tapish Gupta</h5>
+                      Pitching Team
+                      <br>Sophomore Year
+                      <br>B.Tech CCE
+                <div>
+                  <a href="http://linkedin.com/in/tapish-gupta-3a2118146" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/tapish.gupta.77" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close24">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="aasthainfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
+            <img src="members images/aastha.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Aastha Agarwal</h5>
+                      Technical Team
+                      <br>Pre Final Year
+                      <br>B.Tech CCE
+                <div>
+                  <a href="https://www.linkedin.com/in/aastha-agarwal-43873412a" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/aasthasona79" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close25">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="row align-center grid-x hidedivs" id="kritikainfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
+            <img src="members images/kritika.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Kritika Singhal</h5>
+                      Technical Team
+                      <br>Pre Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/kritika-singhal-710b73129/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/kritika.singhal.7" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close26">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="vedarthinfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
+            <img src="members images/vedarth.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Vedarth Sharma</h5>
+                      Technical Team
+                      <br>Pre Final Year
+                      <br>B.Tech ECE
+                <div>
+                  <a href="https://www.linkedin.com/in/vedarth-sharma-761a251b/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close27">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="tusharinfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
+            <img src="members images/tushar.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Tushar Bansal</h5>
+                      Technical Team
+                      <br>Pre Final Year
+                      <br>B.Tech CSE
+                <div>
+                  <a href="https://www.linkedin.com/in/tushar-bansal-54b713152/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/fluckertushar.bansal" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close28">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="atharvainfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
+            <img src="members images/atharva.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Atharva Sharma</h5>
+                      Technical Team
+                      <br>Sophomore Year
+                      <br>B.Tech CCE
+                <div>
+                  <a href="https://www.linkedin.com/in/atharva-sharma-152476148/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/AtharvaSharma0" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close29">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row align-center grid-x hidedivs" id="nischalinfo" style="position:absolute;z-index: 10;width: 100%;top:133%;">
+          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
+            <img src="members images/nischal.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
+            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Nischal Sharma</h5>
+                      Technical Team
+                      <br>Sophomore Year
+                      <br>B.Tech CCE
+                <div>
+                  <a href="https://www.linkedin.com/in/nischal-sharma-2b8295a6/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+                  <a href="https://www.facebook.com/nicks.1106" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+                </div>
+                <div style="margin-top: 0%;">
+                  <a style="color: #F0663B;font-weight: bold;margin-left: 55%;margin-right: 10%;" class="close30">CLOSE</a>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- ROW 2-->
+      <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0px;">
+        <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="nischal">
+          <img src="members images/nischal.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 15%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Nischal Sharma</a>
+              <br>
+              Technical Team
+            </p>
+      </div>
+
+
+     
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="mehul">
+          <img src="members images/mehul.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 16%;margin-top: 10%;" class="para">
+              <a target="_blank" class="linkedin">Mehul Sharma</a>
+              <br>
+              Pitching Team
+            </p>
       </div>
       
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="meteesha">
+          <img src="members images/meetesha.png" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 16%;margin-top: 10%;" class="para">
+              <a target="_blank" class="linkedin">Meetasha Gaur</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="uma">
+          <img src="members images/uma.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 20%;margin-top: 10%;" class="para">
+              <a target="_blank" class="linkedin">Uma Bhatia</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="arushim">
+          <img src="members images/arushim.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 5%;margin-top: 10%;" class="para bigname">
+              <a target="_blank" class="linkedin">Arushi Maheshwari</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+        
+      </div>  
+    <!--ROW 3 --> 
+    <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0px;">
+      
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="monil">
+          <img src="members images/monil.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 24%;margin-top: 10%;" class="para midname">
+              <a  target="_blank" class="linkedin">Monil Narang</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="rajrupa">
+          <img src="members images/rajrupa.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 5%;margin-top: 10%;" class=" bigname">
+              <a target="_blank" class="linkedin">R. Roy Chowdhury</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+      
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="sanjit">
+          <img src="members images/sanjit.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 23%;margin-top: 10%;" class="para">
+              <a target="_blank" class="linkedin">Sanjit Jain</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="simran">
+          <img src="members images/simran.png" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 20%;margin-top: 10%;" class="para">
+              <a target="_blank" class="linkedin">Simran Gupta</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="urvika">
+          <img src="members images/urvika.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 18%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Urvika Agrawal</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+        
+    </div>    
+    
+    <!--ROW 4 --> 
+    <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0px;">
+      
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="avinash">
+          <img src="members images/avinash.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 13%;margin-top: 10%;" class="para midname">
+              <a  target="_blank" class="linkedin">Avinash Widhani</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="vaibhav">
+          <img src="members images/vaibhav.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 19%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Vaibhav Munjal</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+      
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="honey">
+          <img src="members images/honey.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 17%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Honey Agrawal</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="parkavi">
+          <img src="members images/parkavi.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 20%;margin-top: 10%;" class="para">
+              <a target="_blank" class="linkedin">K. Parkavi</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="rishabh">
+          <img src="members images/rishabh.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 5%;margin-top: 10%;" class="bigname">
+              <a target="_blank" class="linkedin">Rishabh Chaturvedi</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+        
+    </div> 
+
+    <!--ROW 5 --> 
+    <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0px;">
+      
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="tapish">
+          <img src="members images/tapish.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 25%;margin-top: 10%;" class="para midname">
+              <a  target="_blank" class="linkedin">Tapish Gupta</a>
+              <br>
+              Pitching Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="arushi">
+          <img src="members images/arushi.png" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 16%;margin-top: 10%;" class="para">
+              <a  target="_blank" class="linkedin">Arushi Gaur</a>
+              <br>
+              Database Team
+            </p>
+      </div>
+      
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="apurv">
+          <img src="members images/apurv.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 16%;margin-top: 10%;" class="para">
+              <a  target="_blank" class="linkedin">Apurv Jain</a>
+              <br>
+              Database Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="priyanshi">
+          <img src="members images/priyanshi.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 10%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Priyanshi Singh</a>
+              <br>
+              Database Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;margin-left: 1.6%;" id="siddharth">
+          <img src="members images/siddharth.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 16%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Siddharth Jain</a>
+              <br>
+              Database Team
+            </p>
+      </div>
+        
+      
+    </div> 
+    <!--ROW 6 --> 
+    <div class="row grid-x grid-padding-x mem-row-last" style="margin-top: 0px;margin-left: 3.5%;">
+      
+
       
       
       
+      <div class=" large-2 medium-6 small-9 blur box2"  style="border-radius:25px;margin-right:2%;margin-top:1.6%;margin-left: 1.5%;" id="abhishek">
+          <img src="members images/abhishek.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 8%;margin-top: 10%;" class="para midname">
+              <a target="_blank" class="linkedin">Abhishek Yadav</a>
+              <br>
+              Database Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-9 blur box2"  style="border-radius:25px;margin-left:1%;margin-top:1.6%;margin-right: 0;" id="arihant">
+          <img src="members images/arihant.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 16%;margin-top: 10%;" class="para">
+              <a target="_blank" class="linkedin">Arihant Jain</a>
+              <br>
+              Database Team
+            </p>
+      </div>
+
+       <div class=" large-2 medium-6 small-9 blur box2"  style="border-radius:25px;margin:1%;" id="kanishka">
+          <img src="members images/kanishka.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 16%;margin-top: 10%;" class="para">
+              <a target="_blank" class="linkedin">Kanishka Jain</a>
+              <br>
+              Database Team
+            </p>
+      </div>
+      <div class=" large-2 medium-6 small-9 blur box2"  style="border-radius:25px;margin:1%;" id="saransh">
+          <img src="members images/saransh.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
+            <p  style="margin-right: 7%;margin-top: 10%;" class="para bigname">
+              <a  target="_blank" class="linkedin">Saransh Bankiwal</a>
+              <br>
+              Database Team
+            </p>
+      </div>    
       
-  <div class="row align-center grid-padding-x grid-x" >
+    </div> 
+        
+
+        
+
+                
+          <div class="row align-center grid-padding-x grid-x" id="form" style="margin-top:5%;" >
     <div class="medium-5 large-5 small-12">  
         <section class= "Mail_Box">
               
@@ -192,7 +1114,7 @@
                                                 
                                              
                     <label>
-                        <input type = "email" name="Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" id="Email1" placeholder = "Email" required>
+                        <input type = "email" name="Email" id="Email1" placeholder = "Email" required>
                     </label>
                     <label><textarea placeholder="Message" name="Message" id="Message1" rows="10"></textarea></label>
                     <label><button class="button large expanded" type="submit" id="submit-form" style="background-color: #F0663B">Submit</button></label>  
@@ -213,7 +1135,7 @@
     </div>
 
      <!--Footer-->
-      <footer class="row responsive" style="background-color: #F0663B;"><br>
+      <footer class="row responsive" style="background-color: #F0663B;" id="footer"><br>
           <div class="row align-center grid-x" style="margin-bottom: 5%;margin-left: 15px;">
             <div class="large-3 small-12 columns size">
               <h6><b>Quick Links</b></h6>
@@ -251,7 +1173,21 @@
             
           </div>
           </div>
-      </footer>
+      </footer>             
+        
+           
+
+     
+
+
+      <!--COORDINATORS-->
+
+      
+
+      
+      
+      
+  
       <script>
          $(document).ready(function() {
             $(document).foundation();
@@ -261,7 +1197,11 @@
     var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbwATt-9_gCoCYYkcXylHvsdSBgCaS-1yllhqNPpWXU1iBBgl8_Y/exec'
     
+
     $('#submit-form').on('click', function(e) {
+    var mess;
+    if (window.navigator.onLine == true) {
+     //mess =  "Your form has been sucessfully submitted. Thanks for your feedback.";
 
     e.preventDefault();
     var jqxhr = $.ajax({
@@ -270,13 +1210,23 @@
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-  alert("Your form has been sucessfully submitted. Thanks for your feedback."),
+  alert("Your form has been sucessfully submitted. Thanks for your feedback.")
+  ,
   $('#Name1').val(''),
   $('#Email1').val(''),
   $('#Message1').val('')
   );
-  
+
+}
+  else {
+      alert("You are currently offline. Kindly check your internet connection.");
+  }
+
 })
+
+
+    
+
     
       </script>
      
@@ -291,6 +1241,678 @@
           document.getElementById('lifeat').click();
         }
       </script>
+
+      <script type="text/javascript">
+        
+
+        $("#arushi").on("click",function(){
+          $("#arushiinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+        
+
+        $("#apurv").on("click",function(){
+          $("#apurvinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+
+        $("#priyanshi").on("click",function(){
+          $("#priyanshiinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+
+        $("#siddharth").on("click",function(){
+          $("#siddharthinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#abhishek").on("click",function(){
+          $("#abhishekinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#arihant").on("click",function(){
+          $("#arihantinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+     
+        $("#kanishka").on("click",function(){
+          $("#kanishkainfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+        
+        $("#saransh").on("click",function(){
+          $("#saranshinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#mehul").on("click",function(){
+          $("#mehulinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+
+        $("#meteesha").on("click",function(){
+          $("#meteeshainfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#uma").on("click",function(){
+          $("#umainfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+
+        $("#arushim").on("click",function(){
+          $("#arushiminfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+
+        $("#monil").on("click",function(){
+          $("#monilinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#rajrupa").on("click",function(){
+          $("#rajrupainfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#sanjit").on("click",function(){
+          $("#sanjitinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#simran").on("click",function(){
+          $("#simraninfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+
+        $("#urvika").on("click",function(){
+          $("#urvikainfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#avinash").on("click",function(){
+          $("#avinashinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+
+        $("#vaibhav").on("click",function(){
+          $("#vaibhavinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#honey").on("click",function(){
+          $("#honeyinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+
+        $("#parkavi").on("click",function(){
+          $("#parkaviinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#rishabh").on("click",function(){
+          $("#rishabhinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+
+
+        $("#tapish").on("click",function(){
+          $("#tapishinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#aastha").on("click",function(){
+          
+          $("#aasthainfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+          
+        });
+
+      
+
+        $("#kritika").on("click",function(){
+          $("#kritikainfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+
+        $("#vedarth").on("click",function(){
+          $("#vedarthinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+      
+        $("#tushar").on("click",function(){
+          $("#tusharinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+     
+
+        $("#atharva").on("click",function(){
+          $("#atharvainfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        
+
+        $("#nischal").on("click",function(){
+          $("#nischalinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+
+        $(".clickme30").on("click",function(){
+          
+          $("#nischalinfo").fadeIn();
+          $(".blur").addClass("actualdivs");
+          $("#navbar").addClass("actualdivs");
+          $("#form").addClass("actualdivs");
+          $("#footer").addClass("actualdivs");
+        });
+        $(".close2").on("click",function(){
+          $("#arushiinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close3").on("click",function(){
+          $("#apurvinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close4").on("click",function(){
+          $("#priyanshiinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close5").on("click",function(){
+          $("#siddharthinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close6").on("click",function(){
+          $("#abhishekinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+        $(".close7").on("click",function(){
+          $("#arihantinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+        $(".close8").on("click",function(){
+          $("#kanishkainfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+        $(".close9").on("click",function(){
+          $("#saranshinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close10").on("click",function(){
+          $("#mehulinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close11").on("click",function(){
+          $("#meteeshainfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close12").on("click",function(){
+          $("#umainfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close13").on("click",function(){
+          $("#arushiminfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close14").on("click",function(){
+          $("#monilinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close15").on("click",function(){
+          $("#rajrupainfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close16").on("click",function(){
+          $("#sanjitinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close17").on("click",function(){
+          $("#simraninfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close18").on("click",function(){
+          $("#urvikainfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+        $(".close19").on("click",function(){
+          $("#avinashinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+        $(".close20").on("click",function(){
+          $("#vaibhavinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+        $(".close21").on("click",function(){
+          $("#honeyinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close22").on("click",function(){
+          $("#parkaviinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close23").on("click",function(){
+          $("#rishabhinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close24").on("click",function(){
+          $("#tapishinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close25").on("click",function(){
+          
+          $("#aasthainfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close26").on("click",function(){
+          $("#kritikainfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close27").on("click",function(){
+          $("#vedarthinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close28").on("click",function(){
+          $("#tusharinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close29").on("click",function(){
+          $("#atharvainfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $(".close30").on("click",function(){
+          $("#nischalinfo").fadeOut();
+          $(".blur").removeClass("actualdivs");
+          $("#navbar").removeClass("actualdivs");
+          $("#form").removeClass("actualdivs");
+          $("#footer").removeClass("actualdivs");
+
+        });
+
+        $("#arushi").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#apurv").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#priyanshi").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#siddharth").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#abhishek").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#arihant").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#kanishka").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#saransh").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#mehul").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#meteesha").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#uma").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#arushim").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#monil").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#rajrupa").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#sanjit").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#simran").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#urvika").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#avinash").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#vaibhav").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#honey").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#parkavi").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#rishabh").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#tapish").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#aastha").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#kritika").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#vedarth").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#tushar").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#atharva").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+        $("#nischal").hover(function(){
+          $(this).toggleClass("bgDivs");
+
+        });
+      </script>
+     
 
 </body>
 </html>
