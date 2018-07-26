@@ -51,6 +51,48 @@
 	width: 120px;
 	margin-left: 30px;
 }
+
+#rnd_pic{
+	width: 150px;
+	height: 150px;
+	margin: 0.5%;
+	border-radius: 50%;
+	padding: 
+}
+
+#rnd_pic2{
+	width: 100px;
+	height: 100px;
+	margin: 0.5%;
+	border-radius: 50%;
+	padding: 
+}
+.cont{
+	border-radius: 75px;
+    background: transparent;
+    padding: 20px 50px 20px 50px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+	align-self: center;
+	margin: 30px;
+	color:#696969;
+	align-items: center;
+	align-content: center;
+  	 	
+}
+
+.cont2{
+	border-radius: 75px;
+    background: transparent;
+    padding: 20px 50px 20px 50px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+	align-self: center;
+	margin: 30px;
+	color:#696969;
+	text-align: center;
+}
+
 .box{
 	position: relative;
 	align-self: center;
@@ -109,12 +151,15 @@
 		color:#696969;
 	}
 }
+
 .rec_box{
 	position: relative;
 	align-self: center;
 	justify-content: space-between;
 	margin-left: 3em;
 	height: 17em;
+}
+
 }
 
 .email_link{
@@ -146,6 +191,12 @@ a.ddmenu:hover{
 
 a.ddmenua:hover, a.ddemenua:link, a.ddmenua:active, a.ddmenua:visited{
 	color:#F0663B !important;
+}
+
+.logos {
+	float: left;
+	width: 20px;
+	height: 20px;
 }
 
 
