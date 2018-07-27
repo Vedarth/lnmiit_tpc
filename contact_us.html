@@ -93,9 +93,7 @@
      	margin-left: 2% !important;
      	margin-top: 5%;
      }
-     .hidedivs{
-     	top:10% !important;
-     }
+     
 	   
 
 	}
@@ -111,9 +109,7 @@
      .mem-row-last{
      	margin-left: 20% !important;
      }
-     .hidedivs{
-     	top:5% !important;
-     }
+     
 	}
     @media screen and (max-width: 600px) {
     .para{
@@ -130,12 +126,62 @@
      .box2{
      	left:2% !important;
      }
-     .hidedivs{
-     	top:7% !important;
+     .row1b{
+     	position: fixed !important;
+     	top:50%;
+     }
+     .row2b{
+     	position: fixed !important;
+     	top:10%;
+     }
+     .row3b{
+     	position: fixed !important;
+     	top:-10%;
+     }
+     .row4b{
+     	position: fixed !important;
+     	top:-50%;
+     }
+     .row5b{
+     	position: fixed !important;
+     	top:-80%;
+     }
+     .row6b{
+     	transform: translateY(750%) !important;
      }
 
+     
+     
+     
+     
+     
+     
+
 	}
-	
+	.row1b{
+		position:element(.row1);
+		transform:translateY(-37%);
+	}
+	.row2b{
+		position:element(.row2);
+		transform:translateY(10%);
+	}
+	.row3b{
+		position:element(.row3);
+		transform:translateY(60%);
+	}
+	.row4b{
+		position:element(.row4);
+		transform:translateY(105%);
+	}
+	.row5b{
+		position:element(.row5);
+		transform:translateY(152%);
+	}
+	.row6b{
+		position: element(.row6);
+		transform: translateY(204%);
+	}
 
 
 
@@ -258,7 +304,7 @@
       		<h1 class="blur">Members</h1>
       	</div>
     <!-- ROW 1-->
-    <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0.2%;">
+    <div class="row align-center grid-x grid-padding-x mem-row row1" style="margin-top: 0.2%;">
 
         <div class=" large-2 medium-6  small-7 blur box2 column"  style="border-radius:25px;margin:1%;" id="aastha">
           <img src="members images/aastha.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
@@ -304,7 +350,7 @@
         
     </div> 
 
-      <div class="row align-center grid-x hidedivs" id="arushiinfo" style="position:absolute;z-index: 100;width: 100%;top:185%;">
+      <div class="row align-center grid-x hidedivs row5b" id="arushiinfo" style="position:absolute;z-index: 100;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
             <img src="members images/arushi.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 7%;">
@@ -323,7 +369,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="apurvinfo" style="position:absolute;z-index: 10;width: 100%;top:185%;">
+      <div class="row align-center grid-x hidedivs row5b" id="apurvinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
             <img src="members images/apurv.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -342,7 +388,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="priyanshiinfo" style="position: absolute;z-index: 10;width: 100%;top:185%;">
+      <div class="row align-center grid-x hidedivs row5b" id="priyanshiinfo" style="position: absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
             <img src="members images/priyanshi.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 3%;">
@@ -361,7 +407,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="siddharthinfo" style="position: absolute;z-index: 10;width: 100%;top:185%;">
+      <div class="row align-center grid-x hidedivs row5b" id="siddharthinfo" style="position: absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
             <img src="members images/siddharth.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -380,7 +426,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="abhishekinfo" style="position: absolute;z-index: 10;width: 100%;top:203%;">
+      <div class="row align-center grid-x hidedivs row6b" id="abhishekinfo" style="position: absolute;z-index: 10;width: 100%;">
           
           <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
             
@@ -403,7 +449,7 @@
           
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="arihantinfo" style="position: absolute;z-index: 10;width: 100%;top:203%;">
+      <div class="row align-center grid-x hidedivs row6b" id="arihantinfo" style="position: absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
             <img src="members images/arihant.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -422,7 +468,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="kanishkainfo" style="position: absolute;z-index: 10;width: 100%;top:203%;">
+      <div class="row align-center grid-x hidedivs row6b" id="kanishkainfo" style="position: absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
             <img src="members images/kanishka.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -441,7 +487,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="saranshinfo" style="position: absolute;z-index: 10;width: 100%;top:203%;">
+      <div class="row align-center grid-x hidedivs row6b" id="saranshinfo" style="position: absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
             <img src="members images/saransh.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 3%;">
@@ -460,7 +506,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="mehulinfo" style="position: absolute;z-index: 10;width: 100%;top:133%;">
+      <div class="row align-center grid-x hidedivs row2b" id="mehulinfo" style="position: absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
             <img src="members images/mehul.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -479,7 +525,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="meteeshainfo" style="position:absolute;z-index: 10;width: 100%;top:133%;">
+      <div class="row align-center grid-x hidedivs row2b" id="meteeshainfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
             <img src="members images/meetesha.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -498,7 +544,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="umainfo" style="position:absolute;z-index: 10;width: 100%;top:133%;">
+      <div class="row align-center grid-x hidedivs row2b" id="umainfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
             <img src="members images/uma.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 10%;">
@@ -517,7 +563,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="arushiminfo" style="position:absolute;z-index: 10;width: 100%;top:133%;">
+      <div class="row align-center grid-x hidedivs row2b" id="arushiminfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
             <img src="members images/arushim.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -536,7 +582,7 @@
           </div>
       </div>
 
-       <div class="row align-center grid-x hidedivs" id="monilinfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+       <div class="row align-center grid-x hidedivs row3b" id="monilinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
             <img src="members images/monil.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -555,7 +601,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="rajrupainfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+      <div class="row align-center grid-x hidedivs row3b" id="rajrupainfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
             <img src="members images/rajrupa.jpg" style="width: 130px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -574,7 +620,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="sanjitinfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+      <div class="row align-center grid-x hidedivs row3b" id="sanjitinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
             <img src="members images/sanjit.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -593,7 +639,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="simraninfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+      <div class="row align-center grid-x hidedivs row3b" id="simraninfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
             <img src="members images/simran.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -612,7 +658,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="urvikainfo" style="position:absolute;z-index: 10;width: 100%;top:149%;">
+      <div class="row align-center grid-x hidedivs row3b" id="urvikainfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
             <img src="members images/urvika.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -631,7 +677,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="avinashinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+      <div class="row align-center grid-x hidedivs row4b" id="avinashinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
             <img src="members images/avinash.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -650,7 +696,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="vaibhavinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+      <div class="row align-center grid-x hidedivs row4b" id="vaibhavinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
             <img src="members images/vaibhav.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -669,7 +715,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="honeyinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+      <div class="row align-center grid-x hidedivs row4b" id="honeyinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
             <img src="members images/honey.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -688,7 +734,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="parkaviinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+      <div class="row align-center grid-x hidedivs row4b" id="parkaviinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
             <img src="members images/parkavi.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -707,7 +753,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="rishabhinfo" style="position:absolute;z-index: 10;width: 100%;top:168%;">
+      <div class="row align-center grid-x hidedivs row4b" id="rishabhinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
             <img src="members images/rishabh.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -726,7 +772,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="tapishinfo" style="position:absolute;z-index: 10;width: 100%;top:185%;">
+      <div class="row align-center grid-x hidedivs" id="tapishinfo" style="position:absolute;z-index: 10;width: 100%;transform: translateY(152%);">
           <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
             <img src="members images/tapish.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -745,7 +791,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="aasthainfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+      <div class="row align-center grid-x hidedivs row1b" id="aasthainfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
             <img src="members images/aastha.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -763,7 +809,7 @@
             </div>
           </div>
       </div>
-      <div class="row align-center grid-x hidedivs" id="kritikainfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+      <div class="row align-center grid-x hidedivs row1b" id="kritikainfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
             <img src="members images/kritika.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -782,7 +828,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="vedarthinfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+      <div class="row align-center grid-x hidedivs row1b" id="vedarthinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
             <img src="members images/vedarth.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -801,7 +847,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="tusharinfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+      <div class="row align-center grid-x hidedivs row1b" id="tusharinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
             <img src="members images/tushar.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
@@ -820,7 +866,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="atharvainfo" style="position:absolute;z-index: 10;width: 100%;top:115%;">
+      <div class="row align-center grid-x hidedivs row1b" id="atharvainfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
             <img src="members images/atharva.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -839,7 +885,7 @@
           </div>
       </div>
 
-      <div class="row align-center grid-x hidedivs" id="nischalinfo" style="position:absolute;z-index: 10;width: 100%;top:133%;">
+      <div class="row align-center grid-x hidedivs row2b" id="nischalinfo" style="position:absolute;z-index: 10;width: 100%;">
           <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
             <img src="members images/nischal.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
             <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
@@ -858,7 +904,7 @@
           </div>
       </div>
       <!-- ROW 2-->
-      <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0px;">
+      <div class="row align-center grid-x grid-padding-x mem-row row2" style="margin-top: 0px;">
         <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="nischal">
           <img src="members images/nischal.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
             <p  style="margin-right: 15%;margin-top: 10%;" class="para midname">
@@ -907,7 +953,7 @@
         
       </div>  
     <!--ROW 3 --> 
-    <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0px;">
+    <div class="row align-center grid-x grid-padding-x mem-row row3" style="margin-top: 0px;">
       
       <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="monil">
           <img src="members images/monil.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
@@ -955,7 +1001,7 @@
     </div>    
     
     <!--ROW 4 --> 
-    <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0px;">
+    <div class="row align-center grid-x grid-padding-x mem-row row4" style="margin-top: 0px;">
       
       <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="avinash">
           <img src="members images/avinash.jpg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
@@ -1003,7 +1049,7 @@
     </div> 
 
     <!--ROW 5 --> 
-    <div class="row align-center grid-x grid-padding-x mem-row" style="margin-top: 0px;">
+    <div class="row align-center grid-x grid-padding-x mem-row row5" style="margin-top: 0px;">
       
       <div class=" large-2 medium-6 small-7 blur box2"  style="border-radius:25px;margin:1%;" id="tapish">
           <img src="members images/tapish.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
@@ -1050,11 +1096,7 @@
       
     </div> 
     <!--ROW 6 --> 
-    <div class="row grid-x grid-padding-x mem-row-last" style="margin-top: 0px;margin-left: 3.5%;">
-      
-
-      
-      
+    <div class="row grid-x grid-padding-x mem-row-last row6" style="margin-top: 0px;margin-left: 3.5%;">
       
       <div class=" large-2 medium-6 small-9 blur box2"  style="border-radius:25px;margin-right:2%;margin-top:1.6%;margin-left: 1.5%;" id="abhishek">
           <img src="members images/abhishek.jpeg" class="pics"  style="border-radius: 50%;height:68px;width:68px;margin-left:5%; object-fit: cover;">
