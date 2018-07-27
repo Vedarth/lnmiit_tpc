@@ -1,4 +1,3 @@
-
 .full-width {
   max-width: 100%;
 }
@@ -121,4 +120,156 @@ height: 12rem
 @media (max-width: 767.98px) {
   
 }
+
+  
+      .bgimg-1 {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("images/image3.jpeg");
+        opacity: 2;
+        height: 100%;
+        max-width: 100%;
+        filter: blur(2);
+        -webkit-filter: blur(0px);
+      }
+      .first{
+      	filter: !important blur(0px);
+        -webkit-filter: !important blur(0px);
+      }
+
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 30%;
+        width: 100%;
+        text-align: center;
+        vertical-align: text-bottom;
+        opacity: 1.0;
+        color: #000;
+      }
+
+      .caption span.border {
+        color: #fff;
+        padding: 16px;
+        letter-spacing: 1px;
+      }
+
+      .full-width {
+        max-width: 100%;
+      }
+      footer{
+
+        margin-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px; 
+        background-color: #F0663B; 
+        padding-right: 0px; 
+        padding: 0px;
+
+      }
+
+      footer div {
+        border-right: 0px;
+        color: white;
+
+      }
+      #footrow{
+        margin-bottom:5%;margin-left: 20px;margin-left: 0px;margin-right: 0px; background-color: #F0663B; padding-right: 0px; 
+      }
+      #foota{
+        color: white;
+      }
+      .footicon{
+        font-size: 28px; margin-right: 10px;
+      }
+      footer div:last-child {
+        border-right: 0px;
+      }
+
+      #footrow2{
+        margin: 0px 0px 0px 0px; background-color: #F0663B; padding-right: 0px;border-top: solid white 1px; padding-top: 20px;
+      }
+     
+      .iconlist{
+          float: right;
+      }
+      nav div img{
+        height: 50px;
+      }
+          div a{
+      color: white;
+    }
+    .Recruiters{
+        border-top: solid grey 1px;
+    }
+    
+    .first .title-bar{
+      background-color: transparent;
+    }
+
+    .first .menu-icon{
+      background-color: transparent;
+    }
+
+    .first .top-bar{
+     background-color: transparent; 
+    }
+
+    .first .top-bar-left{
+     background-color: transparent; 
+    }
+    .first .dropdown{
+     background-color: transparent; 
+    }
+    #topul{
+      background-color: transparent;
+    }
+    #topli{
+
+      color: #F0663B !important;
+      font-size: 21px;
+    }
+    .heading_recruiters{
+      color: #F0663B; line-height: 35px;margin-bottom: 15px;margin-top: 30px;text-align: center;
+
+    }
+
+
+    .headings{
+      color: #F0663B; line-height: 35px;margin-bottom: 15px;margin-top: 80px;text-align: center;
+    }
+    #subheading{
+      line-height: 0px; font-weight: 550; color:  #808080; font-weight: bold;
+    }
+    #linimg{
+      position: relative;
+      padding-left: 400px;
+      bottom: 65px;
+      right: 15px;
+    }
+    .paras{
+      color: #696969; text-align: left;font-size: 16px; font-weight:500;
+    }
+    #bocks{
+      align-content: right;
+    }
+    .card-image{
+      border-color: white;
+      width: 150px;
+      margin-left: 50px;
+    }
+    .card-section h6{
+      font-weight: 700;text-align: center;
+    }
+    .card-section p{
+      font-weight: 500; font-size:15px;text-align: center;
+    }
+    .card-image img{
+      border-radius: 70px;height: 150px;
+    }
+    .linesep{
+      background-color:#CCC; height: 1px; border: 0;
+    }
 
