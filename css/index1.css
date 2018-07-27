@@ -109,6 +109,12 @@ height: 12rem
   color: #696969;
 }
 
+.news-updates a{
+  color: #696969;
+}
+.news-updates a:hover{
+  color: #F0663B;
+}
 
 
 
