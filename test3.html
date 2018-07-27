@@ -1,291 +1,606 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placement Cell, LNMIIT</title>
-    <link rel="icon" href="https://placements.lnmiit.ac.in/images/logo.png">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <!--<link rel="stylesheet" href="css/tpc.css">-->
-    <link rel="stylesheet" href="css/widescreen.css">
-    <link rel="stylesheet" href="css/smallscreen.css">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/myStyle.css">
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/vendor/jquery.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>   
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="css/index1.css">
-    <style type="text/css">
-      .bgimg-1{
-        
-       background-image:  url("images/image3.jpg");         
-          opacity: 0.9;
-          filter: alpha(opacity=50);
-         
-        }
-        i {
-  border: solid #FF4500;
-  border-width: 0 8px 8px 0;
-  display: inline-block;
-  padding: 9px;
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-      }
-    </style>
-  </head>
-  <body onload="myfun()">
- <div class="row bgimg-1">
-    <div class="large-12 columns" style="padding-right: 0px;margin-right: 0px;">
-      <div class="caption">
-          <span class="border"> <h1>The LNM Institute of Information Technology</h1><h1><b>Training & Placement Cell</b></h1></span>
-        </div>
-
-      <div class="first" style="padding-right: 0px;margin-right: 0px;">
-          <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-            <div class="title-bar-title">Menu</div>
-          </div>
-
-          <div class="top-bar row grid-x row full-width" id="responsive-menu" style="margin-right: 0px; padding-right: 0px">
-           
-            <div class="top-bar-center large-5 hide-for-small-only columns" >
-                <ul class="dropdown menu" >
-                 <li class="menu-logo" style="margin-left: 0px; max-width: 20%;"><a href="test3.html" style="padding: 0px;"><img src="images/Logo-LNMIIT.svg" width="" height=""></a></li>
-                </ul>
-            </div>
-            <div class="top-bar-right large-7 columns" id="responsive-menu" >
-              <ul class="menu iconlist" id="topul">
-                    <li><a href="test3.html" id="topli"><b>Home</b></a></li>
-                <li><a href="recruiters.html" id="topli"><b>Recruiters</b></a></li>
-                <li><a href="cons_stats.html" id="topli"><b>Statistics</b></a></li>
-                <li><ul class="dropdown menu" data-dropdown-menu>
-                            <li>
-                              <a href="#" class="ddmenua" id="lifeat" active style="font-size: 20px; "><b>Life At LNMIIT</b></a>
-                              <ul class="menu">
-                                <li><a class="ddmenu" href="academics.html">Academic Momentum</a></li>
-                                <li><a class="ddmenu" href="Prof_societies.html">Professional Societies</a></li>
-                                <li><a class="ddmenu" href="centres.html">Centers for Advanced Learning</a></li>
-                                <li><a class="ddmenu" href="clubs.html">Student Clubs</a></li>
-                              </ul>
-                            </li>
-                          </ul></li>
-                <li><a href="contact_us.html" id="topli"><b>Contact</b></a></li>
-
-              </ul>
-            </div>
-          </div>
-   
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Placement Cell, LNMIIT</title>
+      <link rel="icon" href="https://www.lnmiit.ac.in/images/favicon.ico">
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>    
+      <link rel="stylesheet" href="css/foundation.css">
+      <link rel="stylesheet" href="css/widescreen.css">
+      <link rel="stylesheet" href="css/smallscreen.css">
+      <link rel="stylesheet" href="css/mediumscreen.css">
+      <link rel="stylesheet" href="css/widerscreen.css">
+      <link rel="stylesheet" href="css/extrasmall.css">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="css/myStyle.css">
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
+      <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script src="js/foundation.util.motion.js"></script>
+      <!--<link rel="stylesheet" href="css/index1.css">-->
+   </head>
+   <body onload="myfun()">
+  <div class="row full-width" style="box-shadow: 1.5px 1.5px 8px #F0F0F0;">
+  <div class="large-12 columns">
+    <div class="first">
+      <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium" style="background-color: white;">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu" style="background-color: #E67112;"></button>
+        <div class="title-bar-title" style="background-color: white;">Menu</div>
       </div>
- 
 
+      <div class="top-bar row grid-x" id="responsive-menu" style="background-color: white;">
+        <div class="top-bar-center large-6 columns" style="background-color: white;">
+          <ul class="menu" data-dropdown-menu style="background-color: white;">
+            <li class="menu-logo" style="margin-left: 10px; max-width: 15%;"><a href="index.html" style="padding: 0px;"><img src="images/Logo-LNMIIT.svg" width="" height=""></a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right" id="responsive-menu" style="background-color: white;">
+          <ul class="menu iconlist" style="background-color: white;">
+            <li><a href="index.html" style="color: #F0663B  ;font-size: 20px;"><b>Home</b></a></li>
+            <li><a href="recruiters.html" style="color: #F0663B;font-size: 20px;"><b>Recruiters</b></a></li>
+            <li><a href="cons_stats.html" style="color: #F0663B;font-size: 20px;"><b>Statistics</b></a></li>
+            <li><ul class="dropdown menu" style="background-color: white" data-dropdown-menu>
+                  <li>
+                    <a href="#" class="ddmenua" id="lifeat" style="font-size: 20px;color: #F0663B "><b>Life at LNMIIT</b></a>
+                    <ul class="menu">
+                      <li><a class="ddmenu" href="academics.html">Academic Momentum</a></li>
+                      <li><a class="ddmenu" href="Prof_societies.html">Professional Societies</a></li>
+                      <li><a class="ddmenu" href="#">Centers for Advanced Learning</a></li>
+                      <li><a class="ddmenu" href="clubs.html">Student Clubs</a></li>
+                    </ul>
+                  </li>
+                </ul></li>
+            <li><a href="contact_us.html" style="color: #F0663B;font-size: 20px;"><b>Contact</b></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <div align="center" class="responsive-menu hide-for-small-only">
-          <li><a href="#About-us" id="about_button" class="hollow button" data-toggle="responsive-menu" style="background-color:transparent; border-radius: 100px; margin-top: 37%;font-size: 120%; border-color: white;border-width: 1px;"><i class="down"></i></a></li>
-    </div>
-
+  </div>
 </div>
       <!--About-us-->
-     
-      <section class="About-us">
-        <a id="About-us"></a>
-                    <div class="row grid-padding-x grid-x align-center">
-                        
-                        <div class="small-12 medium-11 large-11 column text-center"> <h2 class="headings">About Us</h2><br>
-                            <h5 id="subheading"> Training & Placement Cell</h5>
-                            <br>
-                            
-                        <p class="paras"> The Training and Placement Cell of the institute handles all aspects of placements at LNMIIT for the students of all departments. It is a student body, directly under the supervision of the honourable Director, headed by the Training and Placement Officer and guided by the Faculty Advisors .The Cell stands for branding the outlook of the university to the corporate and the industry.<br> The Training and Placement Officer, Coordinators and the student representatives handle various crucial tasks in the Cell like reaching out to companies, scheduling and executing placement related activities and carrying out all offcial communication with recruiters and students. The Cell strives to match recruiter expectations with students’ aspirations. The team of student representatives coordinate the activities to ensure compliance with various institute policies and company offcials, who execute coordination with their recruiting organisations. Over the years the Cell has gone from strength to strength in achieving outstanding placements at LNMIIT and will continue to do so in the years to come.
-</p>
-                            <br>
-                            <br>
-                        
-                        </div>
-                        <div class="large-1 medium-1 column hide-for-small-only text-center"> 
-                          <div class= "row align-center" style="margin-top: 7em;" data-smooth-scroll>
-                           <ul id="loc_bar" style="list-style-type: none" data-smooth-scroll>
-                               <li style="padding: 3px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#About-us" id="about_button" class="button tiny" style="background-color:#FF8C00; border-radius: 10px"></a></li>
-                              <div class="callout" style="margin-top: 0px;margin-bottom: 0px;padding:0px 0px 0px 0px;border-color:#A0A0A0;color:#A0A0A0; margin-left: 2em;border-right: none;border-top: none;border-bottom: none;height: 3em;">   </div>
-                              <li style="padding: 0px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#Director" class="button tiny hollow" style="border-color:#A0A0A0; border-radius: 10px;"></a></li> 
-                              <div class="callout" style="margin-top: 0px;margin-bottom: 0px;margin-left: 2em;padding: 0px 0px 0px 0px,border-color:#A0A0A0; color:#A0A0A0;border-right: none;border-top: none;border-bottom: none;height: 3em;">   </div>
-                              <li style="padding: 0px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#Recruiters" class="button tiny hollow" style="border-color:#A0A0A0;border-radius: 10px"></a></li> 
-                            </ul>
-
-                            </div>
-                        </div>
-                            
-                    </div>
       <br>
-
-      </section>
-    <!--Director-->
-    <section name="Director" class="Director">
-    <a id="Director"></a>
-      <div class="row grid-padding-x grid-x align-center">
-          <div class="small-12 medium-11 large-11 column text-center">
-            <h2 class="headings">From the director's desk</h2>
-            <br><br>
-              <div class="row align-center">
-                <div class="grid-x grid-padding-x">
-                  <div class="large-3 medium-3 column cell align-center" id="bocks">
-                      <div class="card-image align-center" >
-                        <img src="images/director-pic.jpg">
-                      </div>
-                      <div class="card-section">
-                        <h6>Rahul Banerjee</h6>
-                        <p>Director<br>The LNMIIT</p>
-                      </div>
-                  </div>
-                  <div class="large-9 medium-9 column small-12" style="">
-                   <p class="paras">Dear Professionals,<br> Welcome to The LNM Institute of Information Technology (LNMIIT), Jaipur! The LNMIIT is an institution of higher learning focused in select areas of Computing, Communication, ICT, Electronics and carefully chosen traditional engineering and sciences with an innovative blend of interdisciplinary flavor and contemporary relevance.<br><br>
-                    The Institute, in spite of being young (founded in 2002, jointly by the Government of Rajasthan and the Lakshmi & Usha Mittal Foundation in the public-private partnership mode) is considered as one of the best institutions in its chosen areas of higher learning, both in the state and the country. In addition to having been accredited by the National Assessment & Accreditation Council (NAAC) as an ‘A’ grade institution, the LNMIIT has been ranked fairly high by many different agencies in the recent past as may be notice d elsewhere on this web-portal. The Institute takes pride in its eco-system that aims to groom incoming students into academically strong yet well-rounded personality based professionals who could adapt themselves to the challenges posed by the ever-changing world and working environments. If you are an aspiring student, we welcome you to take a good look at our website to know more about what the Institute has to offer and preferably consider visiting the campus for getting to know it even better by getting the first hand feel of its ambience and interacting with faculty and students so that you could take a well-informed decision. If you have already applied to the LNMIIT, have been offered an admission and accepted the offer, Congratulations and Welcome to this new home of yours for next few years!</p>
-                  </div>
-                </div>
-                </div>
+      <div class="row align-center " style="margin-top: 70px">
+         <div class="small-12 medium-8 large-8 column ">
+            <div class="row align-center">
+               <br>
+               <div class="orbit" role="region" aria-label="Training and Placement Cell" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" >
+                  <ul class="orbit-container" >
+                     <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                     <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                     <li class="is-active orbit-slide">
+                        <img class="orbit-image" src="images/slider/16.jpg" alt="img1">
+                        <figcaption class="orbit-caption">Training and Placement Cell 2017-18</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/3.jpeg" alt="img2">
+                        <figcaption class="orbit-caption ">Shri L.N. Mittal addressing the students with his inspiring words.</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/5.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">11th Convocation 2018</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/6.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">STUDENT EXCHANGE PROGRAM NIU, TAIWAN - LNMIIT, JAIPUR DEC_2017</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/8.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">ASME’s E-Fest Asia Pacific held at The LNM Institute of Information Technology Jaipur from March 03-05, 2017</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/9.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">Student teams showcase the design and capabilities of their human powered vehicle during ASME’s E-Fest Asia Pacific, 2017</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/10.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">Students during Arcelor-Mittal Internship Program 2017</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/11.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">Bowling Green State University Delegation Visit</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/12.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">Talk on Smart Data by Prof. Amit Sheth, Wright State University, US</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/13.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">Invited talk by Dr. K. Kasturirangan</figcaption>
+                     </li>
+                     <li class="orbit-slide">
+                        <img class="orbit-image" src="images/slider/15.jpeg" alt="img2">
+                        <figcaption class="orbit-caption">NAAC Certificate</figcaption>
+                     </li>
+                  </ul>
+                  <!-- <nav class="orbit-bullets">
+                     <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                     <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                     <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="3"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="4"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="5"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="6"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="7"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="8"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="9"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="10"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="11"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="12"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="13"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="14"><span class="show-for-sr">Third slide details.</span></button>
+                  </nav> -->
+               </div>
             </div>
-            <div class="large-1 column hide-for-small-only text-center"> 
-                  <div class= "row align-center" style="margin-top: 7em;" data-smooth-scroll>
-                      <ul id="loc_bar" style="list-style-type: none" data-smooth-scroll >
-                          <li style="padding: 0px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#About-us" class="button tiny hollow" style="border-color:#A0A0A0; border-radius: 10px;"></a></li> 
-                          <div class="callout" style="margin-top: 0px;margin-bottom: 0px;margin-left: 2em;padding-top: 0px;padding-bottom: 0px,border-color:#FF8C00; color:#FF8C00;border-right: none;border-top: none;border-bottom: none;height: 3em;">   </div>
-                          <li style="padding: 0px,0px,0px,0px;height: 1.2em" data-smooth-scroll> <a href="#Director" class="button tiny" style="background-color:#FF8C00; border-radius: 10px"></a></li> 
-                          <div class="callout" style="margin-top: 0px;margin-bottom: 0px;margin-left: 2em;padding-top: 0px;padding-bottom: 0px,border-color:#FF8C00; color:#FF8C00;border-right: none;border-top: none;border-bottom: none;height: 3em;">   </div>
-                          <li style="padding: 0px,0px,0px,0px;height: 1.2em" data-smooth-scroll><a href="#Recruiters" class="button tiny hollow" style="border-color:#A0A0A0;border-radius: 10px"></a></li> 
-                      </ul>
-
-                  </div>
-            </div>
-        </div>
-        <br>
-      </section>  
-      
-      
-       <br><br>
-     
-
-      <!--recruiters-->
-      <section name="Recruiters full-width">
-            <a id="Recruiters"></a>
-          <br>
-              <h2 class = "text-center heading_recruiters">Our Recruiters</h2>
-          <br>
-      
-      
-            <div class="row responsive1" style="height: 100px; max-width: 90%;" align="center">
-                <div><img src="images/amazon.png" style="height: 100px"  alt="amazon"></div>
-                <div><img src="images/microsoft.jpg" style="height: 100px"  alt="microsoft"></div>
-                <div><img src="images/adobe1.png" style="height: 80px;"  alt="Adobe"></div>
-                <div><img src="images/Dailyhunt.jpg" style="height: 100px" alt="Dailyhunt"></div>
-                <div><img src="images/innovacer.png" style="height: 100px" alt="Innovaccer"></div>
-                <div><img src="images/soroco.jpg" style="height: 100px" alt="Soroco"></div>
-                <div><img src="images/smartprix1.png" style="height: 100px"  alt="SmartPrix"></div>
-                <div><img src="images/Oyo.jpg" style="height: 100px" alt="Oyo"></div>
-                <div><img src="images/delhivery1.png" style="height: 100px"  alt="Delhivery"></div>
-                <div><img src="images/slk.png" style="height: 100px"  alt="SLK software"></div>
-                <div><img src="images/sophos.jpg" style="height: 100px" alt="Sophos"></div>
-                <div><img src="images/gapoon1.png" style="height: 100px" alt="Gapoon"></div>
-            </div>
-            <br><br><br>
-      </section>
-     
-    <footer class="row responsive full-width " style="font-size: 13.5px;">
-      <br>
-      <div class=" row full-width" id="footrow" >
-            <div class="large-3 small-12 columns" >
-              <h6><b>Quick Links</b></h6>
-              <a href="https://www.lnmiit.ac.in/">LNMIIT Home Page</a><br>
-              <a href="recruiters.html">Recruiters </a><br>
-              <a href="cons_stats.html">Statistics</a><br>
-            </div>
-            <div class="large-3 small-12 columns">
-              <h6><b>Download</b></h6>
-              <a href="http://placements.lnmiit.ac.in/pbl.pdf">Placement Brochure</a><br>
-              <a href="Placement policy-2018-19 final.pdf">Placement Policy</a><br>
-            </div>
-            <div class="large-3 small-12 columns">
-              <h6><b>Contact</b></h6>
-              Placement Office<br>
-              Guest House<br>
-              The LNM Institute of Information &amp; Technology<br>
-              Rupa ki Nangal, Post Sumel, Via Jamdoli<br>
-              Jaipur-302031<br>
-              
-            </div>
+         </div>
+         <div class="small-12 medium-4 large-4 column text-center align-center " style="float: right;">
             
-            <div class="large-3 small-12 columns">
-              <img src="images/mail_icon.png" style="height: 1.2em"> <a href="mailto:info.tpc@lnmiit.ac.in" id="foota">info.tpc@lnmiit.ac.in</a><br>
-              <img src="images/phone-icon-orange.png" style="height: 1.5em">+91 141-2689015, 8696792550
+            <h5 class="headings" style="">Updates</h5>
+            <hr style="width: 80%; margin-top: -1rem">
+            <div class="boxu">
+              <marquee behavior="scroll" direction="up" scrollamount="2" onmouseover="this.stop();"
+                    onmouseout="this.start();" width = "80%" height = "100%">
+               
+                  <div class= "news-updates">
+                     <p><a href="updates.html" style="color:#696969">Update1: Write text here.</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="updates.html" style="color:#696969">Update2: Write text here.</a></p>
+                  </div >
+                  <div class= "news-updates">
+                     <p><a href="updates.html" style="color:#696969">Update3: Write text here.</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="updates.html" style="color:#696969">Update4: Write text here.</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="updates.html" style="color:#696969">Update5: Write text here.</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="updates.html" style="color:#696969">Update6: Write text here.</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="updates.html" style="color:#696969">Update7: Write text here.</a></p>
+                  </div>
+               
+              </marquee>
             </div>
+            <p class="paras" style="text-align: right; width: 80%"><a href="updates.html" style="color: #F0663B"> More..</a></p>
+         </div>
       </div>
-      <div class="wrap row full-width" id="footrow2">
-      <div class="large-6 columns">
-                <p>Copyright 2018. All rights reserved | Placement Cell LNMIIT</p>
-                </div>
-        <div class="large-6 columns">
-        <p align="right">Developers:- Jiten Sahdwani, Vedarth Sharma, Aastha Agarwal, Kritika singhal</p>
-        </div>
-        
-    </div>
-    </footer>
+      <div class="row align-center row1" >
+         <div class="small-12 medium-8 large-8 column ">
+            <div class="row align-center">
+            </div>
+            <h4 class="headings">About Us</h4>
+            <p class="paras" style="text-align: justify;"> The Training and Placement Cell of the institute handles all aspects of placements at LNMIIT for the students of all departments. It is a student body, directly under the supervision of the honourable Director, headed by the Training and Placement Officer and guided by the Faculty Advisors .The Cell stands for branding the outlook of the university to the corporate and the industry.<br> The Training and Placement Officer, Coordinators and the student representatives handle various crucial tasks in the Cell like reaching out to companies, scheduling and executing placement related activities and carrying out all offcial communication with recruiters and students. The Cell strives to match recruiter expectations with students’ aspirations. The team of student representatives coordinate the activities to ensure compliance with various institute policies and company offcials, who execute coordination with their recruiting organisations. Over the years the Cell has gone from strength to strength in achieving outstanding placements at LNMIIT and will continue to do so in the years to come.
+            </p>
+         </div>
+         <div class="small-12 medium-4 large-4 column text-center align-center " style="float: right;">
+            <h5 class="headings" ">Notice Board</h5>
+            <hr style="width: 80%; margin-top: -1rem">
+            <div class="boxu">
+              <marquee behavior="scroll" direction="up" scrollamount="2" onmouseover="this.stop();"
+                    onmouseout="this.start();" width = "80%" height = "100%">
+               
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Notice-_Enrollment_-2018-19_UG_Students.pdf" style="color:#696969">Fees Structure of ODD Semester 2018-19 (UG_Program)</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Notice-_Enrollment_-2018-19_PG_Students.pdf" style="color:#696969">Fees Structure of ODD Semester 2018-19 (PG_Program)</a></p>
+                  </div >
+                  <div class= "news-updates" >
+                     <p>Lateral Admission<br><a href="https://erp.lnmiit.ac.in/ugadm/" style="color:#696969">The Online Registration for Lateral Entry Admissions in B. Tech. and B. Tech - M. Tech (5-Year Integrated Dual Degree) Programme for the year 2018 is now open. Deadline of Online Application for Lateral Entry UG Admissions 2018-19 is July 9, 2018 [11:59 PM (IST)]</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/JRF_position_Ashok_Garai.pdf" style="color:#696969">Advertisement for the post of Junior Research Fellow(JRF)</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Selected_Ph.D._Candidates.docx" style="color:#696969">Selected Ph.D. Applicant's Details.</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Fusion_360_Workshop.pdf" style="color:#696969">Workshop on Fusion 360</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Orientation_Report.pdf" style="color:#696969">ORIENTATION CEREMONY.</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Feedback_facility_in_campus.pdf" style="color:#696969">Feedback Facility in Campus</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Additional_members_sexual_harshment_committe.pdf" style="color:#696969">Additional members in the Committee for Prevention of Sexual Harassment</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Office_Order-Grievance_Redressal_Committee.pdf" style="color:#696969">Grievance Redressal Committee</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Anti_Ragging_Notice.pdf" style="color:#696969">Anti Ragging Notice</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p>Committee Prevention of sexual harrassment<br><a href="https://www.lnmiit.ac.in/uploaded_files/CPSH-2017-18.pdf" style="color:#696969">Notice - Prevention of Sexual Harassment</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Cast_based_Discrimination__online_form_for_students.docx" style="color:#696969">Cast based Discrimination online form</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Guidelines_for_allotment_of_of_Residential_Accommodation_in_the_Campus.pdf" style="color:#696969">Guidelines for Allotment of Residential Accommodation</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Guidelines_for_accommodation.pdf" style="color:#696969">Guidelines for Accommodation</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Anti_Ragging_Notice_by_Registrar_2017-18.pdf" style="color:#696969">Anti Ragging Online Form</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p>External Important URLs of Anti Ragging<br><a href="http://www.amanmovement.org/" style="color:#696969">Access URLs of Anti Ragging Click Here</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="http://www.antiragging.in/" style="color:#696969">Access URLs of Anti Ragging</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Fee_Notification_Even_Semester_2017-18_(PG_Program).pdf" style="color:#696969">Fees Structure of Even Semester 2017-18 (PG_Program)</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/uploaded_files/Fee_Notification_Even_Semester_2017-18_(UG_Program).pdf" style="color:#696969">Fees Structure of Even Semester 2017-18 (UG_Program)</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p>Undertaking of Anti ragging<br><a href="https://www.lnmiit.ac.in/uploaded_files/Anti_Ragging_Form_with_Circular.pdf" style="color:#696969">Anti ragging circular and undertaking</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p>Fees for Even Semester 2017 - 2018<br><a href="https://erp.lnmiit.ac.in/online_challan/" style="color:#696969">Fees Portal for Even Semester 2017-2018 Click here</a></p>
+                  </div>
+                  <div class= "news-updates">
+                     <p><a href="https://www.lnmiit.ac.in/Department/Physics/matlab_workshop.html" style="color:#696969">Matlab Workshop, organized by Physics Department</a></p>
+                  </div>
+                                 
+              </marquee>
+            </div>
+            <p class="paras" style="text-align: right; width: 80%"><a href="https://www.lnmiit.ac.in/ViewAll_NoticeBoard.aspx" style="color: #F0663B"> More..</a></p>
+            </div>
+         </div>
+      </div>
+      <div class="row align-center director-row-res">
+         <h4 class="headings">From the director's desk</h4>
+         <div class="row ">
+                <div class="large-2 medium-3 small-12 column cell  director-res">
+                  <img class="imgDir" src="images/director-pic3.jpg" style="max-height: 250px">
+               </div>
+           
+            <div class="large-10 medium-9 column small-12" >
+               <p class="paras paras-res" style="text-align: justify;">
+                  The LNMIIT Jaipur was established in the year 2002 by the Lakshmi and Usha Mittal Foundation and the State Government of Rajasthan, as a joint venture. It was envisioned to be nurtured over the years to become an Institution of higher learning in the broad areas of computing, communication and allied sub-areas, with a strong interdisciplinary flavour and with a scope to gradually expand into other areas of contemporary relevance.  Starting with the first interdisciplinary programme called Communication and Computer Engineering (CCE), with gradual afddition of other programmes such as Electronics and Computer Engineering (ECE), Computer Science and Engineering (CSE), Physics, Mathematics, HSS and most recently Mechanical and Mechatronics Engineering areas.  The Institute has evolved as one of the best-in-class young Institutions of higher learning in the country.<br>
+                  Apart from the flexible curricular structure, opportunities for multiple levels of interfacing with both faculty and industry in form of on-campus projects,  off-campus internships, on-campus internships though LUSIP programme, winter internships outside the country for select students in University research labs, summer internships for select students at ArcelorMittal, Kazakhstan and select industrial research laboratories both within India and abroad, some long internships in industrial research labs for eligible students, students and faculty get opportunities of closely working on the real world problems. 
+                  <button data-toggle="read-more-content" id="readButton" onclick="toggleBut()">
+               <p style="color:#F0663B; padding-left: 0.5rem">read more...</p></button><br>
+               <div class="read-more-content paras"  id="read-more-content" data-toggler data-animate="hinge-in-from-top hinge-out-from-top" style="color:#696969;  align-content: center; align-items: center; text-align: justify;">
+                  Thanks to the competitive environment offered by the Institute, the LNMIIT students have been doing very well in several coding and problem solving competitions.  They have also made the Institute proud by getting selected in double numbers in Google Summer of Code.  GSOC-2017 had 15 selections from the Institute whereas GSOC-2018 has 10 selections and two mentors from the LNMIIT. <br>
+                  Institute has created a robust eco-system involving seven specialized centres of research (some of which are initially created as virtual centres) and one centre for technology business incubation and entrepreneurial leadership. This has been done with a view to not only encourage quality research and development in the niche areas of technology but also encourage creation of new start-up ventures by students and faculty of the Institute.<br>
+                  Apart from benefitting from its strong entrepreneurial culture as of this writing, these centres are collaborating with both industries and academia around the world in the process of solving some of the most pressing problems of our times including those related to Energy Efficiency, Artificial Intelligence, Computer Vision, IoT, ML, Robotics, Social Computing, Cryptography, Cyber Security and Next Generation Networking (5G included). <br>
+                  The Institute does have several well-appointed laboratories and over next three years intends to add another sixteen laboratories as part of its growth plan.  Institute also takes pride in its input student quality as well as its well qualified faculty.<br>
+                  In its efforts towards creating responsible citizens of tomorrow who would not only do their work well but also would be able to balance between work and life so as to maximize their happiness, the Institute has launched Project Happiness, and over and above, courses being offered on ethics.
+                  We are proud to present our students to world outside with a hope and confidence that although young, their attitude and aptitude would in the near and long term would add value to any organization or a company that embraces them.
+                  <button data-toggle="read-more-content" id="readLessButton" onclick="toggleBut()">
+                     <p style="color: #F0663B; padding-left: 0.5rem">read less</p>
+                  </button>
+                  <br>
+               </div>
+               </p>
+            </div>
+         </div>
+      </div>
+      <!--graphs-->
+      <h4 class="headings">Our Achievements</h4>
+      <div class="row container" ">
+         <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawVisualization);
+            
+            
+            function drawVisualization() {
+              // Some raw data (not necessarily accurate)
+              var data = google.visualization.arrayToDataTable([
+               ['Year', 'No. Of Recruiters'],
+               ['2016',  34],
+               ['2017',  42],
+               ['2018',  55],
+            
+            ]);
+            
+            var options = {
+            title : 'Number of Recruiters',
+            subtitle: '(on campus)',
+            vAxis : {baseline : 0},
+            hAxis: {title: 'Year'},
+            seriesType: 'bars',
+            legend:{ position:'none'},
+            colors: ['#006666'],
+            };
+            
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div2'));
+            chart.draw(data, options);
+            }
+            
+         </script>
+         
+         <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawVisualization);
+            
+            
+            function drawVisualization() {
+              // Some raw data (not necessarily accurate)
+              var data = google.visualization.arrayToDataTable([
+               ['Year', 'Average Package'],
+               ['2015',  4.10],
+               ['2016',  5.47],
+               ['2017',  6.98],
+               ['2018',  7.34],
+            
+            ]);
+            
+            var options = {
+            title : 'Year-wise Average Package',
+            vAxis : {baseline : 0},
+            hAxis: {title: 'Year'},
+            seriesType: 'bars',
+            legend:{ position:'none'},
+             colors: ['#006666'],
+            };
+            
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+            }
+            
+         </script>
+         <div class="column large-5 medium-5 small-12 ">
+          <div  id="chart_div2" style="height: 300px; width: 100%;"></div>
+         </div>
+         <div class="column large-2 medium-2 small-12 " style="text-align: center;">
+            <div style="vertical-align: middle;"><img src="images/3.png" class =" stats_img responsive" ></div>
+         </div>   
+         <div class="column large-5 medium-5 small-12 ">
+          <div  id="chart_div" style=" width: 100%; "></div>
+         </div>   
+      </div>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-     
+
+      <div class="row align-center " >
+         <div class="large-5 medium-5 small-12 column stats2-res" ><img  src="images/student_placed.png" style="height:auto; width: 80%;"></div>
+         <div class="large-2 medium-2 small-12 column stats2-res" style="text-align: center;">
+            <div class="paras complete-stats-res" style="text-align: center;"><p>For Complete Stats</p>
+               <a href="cons_stats.html" class="button round button small click-here-res" style="background-color: #F0663B;">Click Here
+            </a>
+            </div>
+         </div>
+         <div class="large-5 medium-5 small-12 column stats2-res" style="float: left; text-align: center;"><img src="images/offers2.png" style="height: auto; width: 80%;" ></div>
+      </div>
+
+
+      
+      <!--recruiters-->
+      <a id="Recruiters"></a>
+      <br>
+      <h4 class = "text-center headings">Major Recruiters</h4>
+      <br>
+      <div class="row responsive1 large-12 full-width " style="height: 100px; max-width: 90%;" align="center">
+         <div class="logo-sl"><img src="images/amazon.png" alt="amazon" style="margin-left:0px; padding-left: 0px; height: 100px; width: 300px; margin-top:0px;"></div>
+         <div class="logo-sl"><img src="images/microsoft.png" style="height:100px;" alt="microsoft"></div>
+         <div class="logo-sl"><img src="images/adobe.png" style="height:100px;" alt="Adobe"></div>
+         <div class="logo-sl"><img src="images/ibm.png" style="height:100px; padding: 17px; width: 100%" alt="IBM"></div>
+         <div class="logo-sl"><img src="images/samsung.png" style="height:100px; padding: 15px;" alt="samsung"></div>
+         <div class="logo-sl"><img src="images/Dailyhunt.png" style="height:100px;" alt="Dailyhunt"></div>
+         <div class="logo-sl"><img src="images/hsbc.png" style="height: 100px" alt="HSBC"></div>
+         <div class="logo-sl"><img src="images/innovacer.jpg" style="height:100px;" alt="Innovaccer"></div>
+         <div class="logo-sl"><img src="images/soroco1.png" style="height:100px; width: 140px;" alt="Soroco"></div>
+         <div class="logo-sl"><img src="images/smartprix1.png" style="height:100px;" alt="SmartPrix"></div>
+         <div class="logo-sl"><img src="images/oyo1.png" style="height: 100px" alt="Oyo"></div>
+         <div class="logo-sl"><img src="images/delhivery1.png" style="height:100px;" alt="Delhivery"></div>
+         <div class="logo-sl"><img src="images/sophos.png" style="height: 100px" alt="Sophos"></div>
+         <div class="logo-sl"><img src="images/gapoon1.png" style="height: 100px" alt="Gapoon"></div>
+         <div class="logo-sl"><img src="images/slk.png" alt="SLK software" style="height: 100px; margin-top: 0px; width: 180px;"></div>
+      </div>
+      <br><br><br>
+
+
+
+      <footer class="row responsive full-width" style="font-size: 13.5px;">
+         <br>
+         <div class=" row full-width" id="footrow" >
+            <div class="large-3 small-12 columns footer-links medium-3" >
+               <h6><b>Quick Links</b></h6>
+               <a href="https://www.lnmiit.ac.in/">LNMIIT Home Page</a><br>
+               <a href="recruiters.html">Recruiters </a><br>
+               <a href="cons_stats.html">Statistics</a><br>
+            </div>
+            <div class="large-3 small-12 columns footer-links medium-3">
+               <h6><b>Download</b></h6>
+               <a href="#footrow">Placement Brochure</a><br>
+            </div>
+            <div class="large-3 small-12 columns footer-links medium-3">
+               <h6><b>Contact</b></h6>
+               Placement Office<br>
+               Guest House<br>
+               The LNM Institute of Information &amp; Technology<br>
+               Rupa ki Nangal, Post Sumel, Via Jamdoli<br>
+               Jaipur-302031<br>
+            </div>
+
+            <div class="large-3 small-12 columns footer-links medium-3">
+               <img src="images/mail_icon.png" style="height: 1.2em"> <a href="mailto:tpo@lnmiit.ac.in" id="foota">tpo@lnmiit.ac.in</a><br>
+               <img src="images/phone-icon-orange.png" style="height: 1.5em">+91 141-2689015, 8696792550
+            </div>
+         </div>
+         <div class="wrap row full-width footer-links-2" id="footrow2">
+            <div class="large-4 columns">
+               <p> ©Copyright 2018. All rights reserved | Placement Cell LNMIIT</p>
+            </div>
+            <div class="large-8 columns">    
+               <p align="right" class="footer-links-2"> Developers:- <a href="https://github.com/jitenss" target="blank"> Jiten Sadhwani </a>,<a href="https://github.com/   Vedarth" target="blank"> Vedarth Sharma </a>,<a href="https://github.com/aasthasona79" target="blank"> Aastha Agarwal</a>, <a href="https://github.com/kritika0598" target="blank"> Kritika singhal </a>, <a href="https://github.com/tusharb104" target="blank">Tushar Bansal </a>,<a href="https://github.com/atharvasharma"  target="blank">Atharva Sharma</a>,<a href="https://github.com/NickSneo" target="blank"> Nischal Sharma</a>
+               </p>
+            </div>
+         </div>
+      </footer>
+
+
+
       <script type="text/javascript">
-$('a[href*="#"]')
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) {
-            return false;
-          } else {
-            $target.attr('tabindex','-1');
-            $target.focus();
-          };
-        });
-      }
-    }
-  });
+         function myfun() {
+           document.getElementById('lifeat').click();
+           document.getElementById('lifeat').click();
+           document.getElementById('clicktext').click();
+         }
       </script>
-
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
       <script type="text/javascript">
-        function myfun() {
-          document.getElementById('lifeat').click();
-          window.history.back();
-        }
+         $(document).ready(function() {
+                     $(document).foundation();
+                  })
+                  $('.responsive1').slick({
+           dots: false,
+           infinite: true,
+           speed: 1000,
+           slidesToShow: 5,
+           slidesToScroll: 1,
+           autoplay: true,
+           autoplaySpeed: 1000,
+           responsive: [
+             {
+               breakpoint: 1024,
+               settings: {
+                 slidesToShow: 3,
+                 slidesToScroll: 1,
+                 infinite: true,
+                 dots: false
+               }
+             },
+             {
+               breakpoint: 600,
+               settings: {
+                 slidesToShow: 2,
+                 slidesToScroll: 1,
+                 infinite: true,
+                 dots: false
+               }
+             },
+             {
+               breakpoint: 480,
+               settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+                 infinite: true,
+                 dots: false
+               }
+             }
+           ]
+         });
+               
+      </script>
+      <script type="text/javascript">
+         $('a[href*="#"]')
+           .not('[href="#"]')
+           .not('[href="#0"]')
+           .click(function(event) {
+             if (
+               location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+               && 
+               location.hostname == this.hostname
+             ) {
+               var target = $(this.hash);
+               target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+               if (target.length) {
+                 event.preventDefault();
+                 $('html, body').animate({
+                   scrollTop: target.offset().top
+                 }, 1000, function() {
+                   var $target = $(target);
+                   $target.focus();
+                   if ($target.is(":focus")) {
+                     return false;
+                   } else {
+                     $target.attr('tabindex','-1');
+                     $target.focus();
+                   };
+                 });
+               }
+             }
+           });
+      </script>
+      <!-- Updates scroller-->
+      <script type="text/javascript">
+         $(function(){
+             var tickerLength = $('.container ul li').length;
+             var tickerHeight = $('.container ul li').outerHeight();
+             $('.container ul li:last-child').prependTo('.container ul');
+             $('.container ul').css('marginTop',-tickerHeight);
+             function moveTop(){
+               $('.container ul').animate({
+                 top : -tickerHeight
+               },600, function(){
+                $('.container ul li:first-child').appendTo('.container ul');
+                 $('.container ul').css('top','');
+               });
+              }
+             setInterval( function(){
+               moveTop();
+             }, 3000);
+         });
+      </script>
+      <script type="text/javascript">
+         function myfun() {
+           document.getElementById('lifeat').click();
+           document.getElementById('lifeat').click();
+         
+         }
+         
+         var slideIndex = 1;
+         showDivs(slideIndex);
+         
+         function plusDivs(n) {
+           showDivs(slideIndex += n);
+         }
+         
+         function showDivs(n) {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           if (n > x.length) {slideIndex = 1}    
+           if (n < 1) {slideIndex = x.length}
+           for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+           }
+           x[slideIndex-1].style.display = "block";  
+         }
+         function toggleBut() {
+             var x = document.getElementById("readButton");
+             var y= document.getElementById("readLessButton");
+             if (x.style.display === "none") {
+                 x.style.display = "inline-block";
+                 y.style.display= "none";
+             } else {
+                 x.style.display = "none";
+                 y.style.display = "inline-block";
+             }
+         }
+         
+      </script>
+      <script type="text/javascript">
+         var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+         if (isSafari){
+           var x = document.getElementById('scroll_bar1');
+           x.style.display = "none";
+           var y = document.getElementById('scroll_bar2');
+           y.style.display = "none";
+         }
       </script>
       
-  </body>
+   </body>
 </html>
