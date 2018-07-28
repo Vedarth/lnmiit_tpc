@@ -82,7 +82,7 @@
       font-weight: bold;
     }
     
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1450px) {
     .bigname{
     	margin-right: 0% !important;
     }
@@ -92,22 +92,12 @@
     #tpo_n_co{
     	height: 100vh !important;
     }
-          
-	   
+    .row6b{
+    	top:110%;
+    }
 
 	}
-	@media screen and (max-width: 1300px) {
-    
-     
-    
-     .para-res{
-     	font-size: 14px;
-     }
-     #tpo_n_co{
-    	height: 100vh !important;
-    }
-     
-	}
+	
     @media screen and (max-width: 600px) {
     
      
@@ -118,7 +108,7 @@
      }
      .row1b{
      	position: fixed !important;
-     	top:50%;
+     	top:40%;
      }
      .row2b{
      	position: fixed !important;
@@ -126,21 +116,24 @@
      }
      .row3b{
      	position: fixed !important;
-     	top:-10%;
+     	top:-30%;
      }
      .row4b{
      	position: fixed !important;
-     	top:-50%;
+     	top:-70%;
      }
      .row5b{
      	position: fixed !important;
-     	top:-80%;
+     	top:-110%;
+     	
      }
      .row6b{
-     	transform: translateY(750%) !important;
+     	position: fixed !important;
+     	top:-120%;
+     	
      }
      #tapishinfo{
-     	transform: translateY(550%) !important;	
+     	transform: translateY(600%) !important;	
      }
      #rnd_pic{
      	height:100px;
@@ -169,14 +162,10 @@
      }
      
      
-     
-     
-     
-
 	}
 	.row1b{
 		position:element(.row1);
-		transform:translateY(-37%);
+		transform:translateY(-30%);
 	}
 	.row2b{
 		position:element(.row2);
@@ -184,22 +173,29 @@
 	}
 	.row3b{
 		position:element(.row3);
-		transform:translateY(60%);
+		transform:translateY(55%);
 	}
 	.row4b{
 		position:element(.row4);
-		transform:translateY(105%);
+		transform:translateY(97%);
 	}
 	.row5b{
 		position:element(.row5);
-		transform:translateY(152%);
+		transform:translateY(142%);
 	}
 	.row6b{
 		position: element(.row6);
-		transform: translateY(204%);
+		transform: translateY(185%);
 	}
-
-
+	.expanded-div{
+		margin-left: 15%;
+		margin-right: 0%;
+		width: 70%;
+	}
+	.expanded-img{
+		width:145px !important;
+		height:145px !important;
+	}
 
     </style>
   </head>
@@ -390,47 +386,55 @@
     </div> 
 
       <div class="row align-center grid-x hidedivs row5b" id="arushiinfo" style="position:absolute;z-index: 100;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
-            <img src="members images/arushi.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 7%;">
-                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Arushi Gaur</h5>
-                      Database Team
-                      <br>Final Year
-                      <br>B.Tech CSE
-                <div>
-                  <a href="https://www.linkedin.com/in/arushi-gaur-33225966/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
-                  <a href="https://www.facebook.com/arushi.gaur.359" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a> 
-                </div>
-                <div style="margin-top: 0%;">
-                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close2">CLOSE</a>
-                </div>
-            </div>
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:9%;border-radius: 40px;">
+	        <div style="width: 45%;" class="pics">
+	            <img src="members images/arushi.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+	        </div>
+	        <div style="width:55%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
+	            
+	                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Arushi Gaur</h5>
+	                      Database Team
+	                      <br>Final Year
+	                      <br>B.Tech CSE
+	                <div>
+	                  <a href="https://www.linkedin.com/in/arushi-gaur-33225966/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+	                  <a href="https://www.facebook.com/arushi.gaur.359" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a> 
+	                </div>
+	                <div style="margin-top: 0%;">
+	                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close2">CLOSE</a>
+	                </div>
+	            
+	        </div>
           </div>
       </div>
 
       <div class="row align-center grid-x hidedivs row5b" id="apurvinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
-            <img src="members images/apurv.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
-                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Apurv Jain</h5>
-                      Database Team
-                      <br>Pre Final Year
-                      <br>B.Tech CCE
-                <div>
-                  <a href="https://www.linkedin.com/in/apurv-jain-b8b8b113b/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
-                  <a href="https://www.facebook.com/aj1805" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
-                </div>
-                <div style="margin-top: 0%;">
-                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close3">CLOSE</a>
-                </div>
-            </div>
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:27%;border-radius: 40px;">
+	            <div style="width:45%;" class="pics">
+	            	<img src="members images/apurv.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+	            </div>
+	            <div style="width:55%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
+	                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Apurv Jain</h5>
+	                      Database Team
+	                      <br>Pre Final Year
+	                      <br>B.Tech CCE
+	                <div>
+	                  <a href="https://www.linkedin.com/in/apurv-jain-b8b8b113b/" target="_blank" ><i class="fab fa-linkedin" style="font-size:2.5em;color:#0077B5;"></i></a>
+	                  <a href="https://www.facebook.com/aj1805" target="_blank" ><i class="fab fa-facebook" style="font-size:2.5em;color:#3B5998"></i></a>
+	                </div>
+	                <div style="margin-top: 0%;">
+	                  <a style="color: #F0663B;font-weight: bold;margin-left: 60%;margin-right: 10%;" class="close3">CLOSE</a>
+	                </div>
+	            </div>
           </div>
       </div>
 
       <div class="row align-center grid-x hidedivs row5b" id="priyanshiinfo" style="position: absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
-            <img src="members images/priyanshi.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 3%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:46%;border-radius: 40px;">
+            <div style="width:45%;" class="pics">
+            	<img src="members images/priyanshi.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:55%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Priyansi Singh</h5>
                       Database Team
                       <br>Pre Final Year
@@ -447,9 +451,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row5b" id="siddharthinfo" style="position: absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
-            <img src="members images/siddharth.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:55%;border-radius: 40px;">
+            <div style="width: 45%;" class="pics">
+            	<img src="members images/siddharth.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:55%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Siddharth Jain</h5>
                       Database Team
                       <br>Pre Final Year
@@ -467,10 +473,11 @@
 
       <div class="row align-center grid-x hidedivs row6b" id="abhishekinfo" style="position: absolute;z-index: 10;width: 100%;">
           
-          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
-            
-            <img src="members images/abhishek.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:-10%;border-radius: 40px;">
+            <div style="width:45%;" class="pics">
+            	<img src="members images/abhishek.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:55%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black">Abhishek Yadav</h5>
                       Database Team
                       <br>Sophomore Year
@@ -489,9 +496,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row6b" id="arihantinfo" style="position: absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
-            <img src="members images/arihant.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:8%;border-radius: 40px;">
+            <div style="width: 45%;" class="pics">
+            	<img src="members images/arihant.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+           	</div>
+            <div style="width:55%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Arihant Jain</h5>
                       Database Team
                       <br>Sophomore Year
@@ -508,9 +517,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row6b" id="kanishkainfo" style="position: absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
-            <img src="members images/kanishka.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:28%;border-radius: 40px;">
+           	<div style="width: 45%;" class="pics">
+           		 <img src="members images/kanishka.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+           	</div>
+            <div style="width:55%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Kanishka Jain</h5>
                       Database Team
                       <br>Sophomore Year
@@ -527,9 +538,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row6b" id="saranshinfo" style="position: absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
-            <img src="members images/saransh.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 3%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:47%;border-radius: 40px;">
+          	<div style="width: 42%;" class="pics">
+            	<img src="members images/saransh.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:58%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Saransh Bankiwal</h5>
                       Database Team
                       <br>Sophomore Year
@@ -546,10 +559,12 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row2b" id="mehulinfo" style="position: absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
-            <img src="members images/mehul.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
-                <h4 style="margin-bottom: 0;font-weight:500;color: black;">Mehul Sharma</h4>
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:9%;border-radius: 40px;">
+            <div style="width: 42%;" class="pics">
+            	<img src="members images/mehul.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:58%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Mehul Sharma</h5>
                       PR Team
                       <br>Final Year
                       <br>B.Tech CSE
@@ -565,9 +580,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row2b" id="meteeshainfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
-            <img src="members images/meetesha.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:28%;border-radius: 40px;">
+            <div style="width:42%;" class="pics">	
+            	<img src="members images/meetesha.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:58%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Meetasha Gaur</h5>
                       PR Team
                       <br>Final Year
@@ -584,9 +601,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row2b" id="umainfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
-            <img src="members images/uma.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 10%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:47%;border-radius: 40px;">
+          	<div style="width:42%;" class="pics">
+            	<img src="members images/uma.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+        	</div>
+            <div style="width:58%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Uma Bhatia</h5>
                       PR Team
                       <br>Final Year
@@ -603,9 +622,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row2b" id="arushiminfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
-            <img src="members images/arushim.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:55%;border-radius: 40px;">
+            <div style="width:40%;" class="pics">	
+            	<img src="members images/arushim.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h6 style="margin-bottom: 0;font-weight:600;color: black;font-size: 1.1em">Arushi Maheshwari</h6>
                       PR Team
                       <br>Pre Final Year
@@ -622,9 +643,11 @@
       </div>
 
        <div class="row align-center grid-x hidedivs row3b" id="monilinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
-            <img src="members images/monil.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:-10%;border-radius: 40px;">
+            <div style="width:40%;" class="pics">	
+            	<img src="members images/monil.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Monil Narang</h5>
                       PR Team
                       <br>Pre Final Year
@@ -641,10 +664,12 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row3b" id="rajrupainfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
-            <img src="members images/rajrupa.jpg" style="width: 130px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
-                <h6 style="margin-bottom: 0;font-weight:600;color: black;">Rajrupa Roy Chowdhury</h6>
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:10%;border-radius: 40px;">
+          	<div style="width: 40%;" class="pics">
+            	<img src="members images/rajrupa.jpg" style="width: 130px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
+                <h6 style="margin-bottom: 0;color: black;font-weight: 600;">Rajrupa Roy Chowdhury</h6>
                       PR Team
                       <br>Pre Final Year
                       <br>B.Tech ECE
@@ -660,10 +685,12 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row3b" id="sanjitinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
-            <img src="members images/sanjit.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
-                <h4 style="margin-bottom: 0;font-weight:500;color: black;">Sanjit Jain</h4>
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:28%;border-radius: 40px;">
+          	<div style="width: 40%;" class="pics">
+            	<img src="members images/sanjit.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Sanjit Jain</h5>
                       Pitching Team
                       <br>Pre Final Year
                       <br>B.Tech CSE
@@ -679,10 +706,12 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row3b" id="simraninfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
-            <img src="members images/simran.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
-                <h4 style="margin-bottom: 0;font-weight:500;color: black;">Simran Gupta</h4>
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:46%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/simran.png" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
+                <h5 style="margin-bottom: 0;font-weight:500;color: black;">Simran Gupta</h5>
                       PR Team
                       <br>Pre Final Year
                       <br>B.Tech ME
@@ -698,9 +727,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row3b" id="urvikainfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
-            <img src="members images/urvika.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:55%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/urvika.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Urvika Agrawal</h5>
                       PR Team
                       <br>Pre Final Year
@@ -717,9 +748,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row4b" id="avinashinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
-            <img src="members images/avinash.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:-10%;border-radius: 40px;">
+            <div style="width:40%;" class="pics">
+            	<img src="members images/avinash.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Avinash Widhani</h5>
                       PR Team
                       <br>Pre Final Year
@@ -736,9 +769,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row4b" id="vaibhavinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
-            <img src="members images/vaibhav.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:9%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/vaibhav.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Vaibhav Munjal</h5>
                       PR Team
                       <br>Pre Final Year
@@ -755,9 +790,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row4b" id="honeyinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
-            <img src="members images/honey.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:28%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/honey.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Honey Agrawal</h5>
                       PR Team
                       <br>Sophomore Year
@@ -774,9 +811,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row4b" id="parkaviinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
-            <img src="members images/parkavi.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:47%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/parkavi.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">K. Parkavi</h5>
                       PR Team
                       <br>Sophomore Year
@@ -793,9 +832,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row4b" id="rishabhinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
-            <img src="members images/rishabh.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:55%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/rishabh.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h6 style="margin-bottom: 0;font-weight:600;color: black;font-size: 1em;">Rishabh Chaturvedi</h6>
                       PR Team
                       <br>Sophomore Year
@@ -812,9 +853,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs" id="tapishinfo" style="position:absolute;z-index: 10;width: 100%;transform: translateY(152%);">
-          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
-            <img src="members images/tapish.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:-10%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/tapish.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;margin-right: 3%;">Tapish Gupta</h5>
                       PR Team
                       <br>Sophomore Year
@@ -831,9 +874,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row1b" id="aasthainfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
-            <img src="members images/aastha.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:-10%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/aastha.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Aastha Agarwal</h5>
                       Technical Team
                       <br>Pre Final Year
@@ -849,9 +894,11 @@
           </div>
       </div>
       <div class="row align-center grid-x hidedivs row1b" id="kritikainfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:19%;border-radius: 40px;">
-            <img src="members images/kritika.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:9%;border-radius: 40px;">
+          	<div style="width: 40%;" class="pics">
+            	<img src="members images/kritika.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Kritika Singhal</h5>
                       Technical Team
                       <br>Pre Final Year
@@ -868,9 +915,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row1b" id="vedarthinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:37%;border-radius: 40px;">
-            <img src="members images/vedarth.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:28%;border-radius: 40px;">
+          	<div style="width: 40%;" class="pics">
+            	<img src="members images/vedarth.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Vedarth Sharma</h5>
                       Technical Team
                       <br>Pre Final Year
@@ -887,9 +936,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row1b" id="tusharinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:55%;border-radius: 40px;">
-            <img src="members images/tushar.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;margin-right: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:47%;border-radius: 40px;">
+            <div style="width: 40%;" class="pics">
+            	<img src="members images/tushar.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Tushar Bansal</h5>
                       Technical Team
                       <br>Pre Final Year
@@ -906,9 +957,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row1b" id="atharvainfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:65%;border-radius: 40px;">
-            <img src="members images/atharva.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:55%;border-radius: 40px;">
+          	<div style="width: 40%;" class="pics">
+            	<img src="members images/atharva.jpg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Atharva Sharma</h5>
                       Technical Team
                       <br>Sophomore Year
@@ -925,9 +978,11 @@
       </div>
 
       <div class="row align-center grid-x hidedivs row2b" id="nischalinfo" style="position:absolute;z-index: 10;width: 100%;">
-          <div class="large-3 medium-3 callout box2" style="left:0%;border-radius: 40px;">
-            <img src="members images/nischal.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;">
-            <div style="letter-spacing: 1.2px;line-height:1.7em;padding-top: 5%;">
+          <div class="large-3 medium-3 callout box2 expanded-div" style="left:-10%;border-radius: 40px;">
+          	<div style="width: 40%;" class="pics">
+            	<img src="members images/nischal.jpeg" style="width: 160px;height:180px;border-radius: 50%; object-fit: cover;" class="expanded-img">
+            </div>
+            <div style="width:60%;letter-spacing: 1.2px;line-height:1.7em;padding-left:6%;padding-top: 6%;" class="para-res">
                 <h5 style="margin-bottom: 0;font-weight:500;color: black;">Nischal Sharma</h5>
                       Technical Team
                       <br>Sophomore Year
