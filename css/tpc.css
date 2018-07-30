@@ -199,11 +199,11 @@ a.ddmenua:hover, a.ddemenua:link, a.ddmenua:active, a.ddmenua:visited{
 	height: 20px;
 }
 .first .top-bar{
-  -webkit-box-shadow: 0 4px 2px -2px black;
-  -moz-box-shadow: 0 4px 2px -2px black;
-      box-shadow: 0 4px 2px -2px #F0663B;
-  background-color: transparent;
- height: 4rem;
+  -webkit-box-shadow: 0 4px 2px -2px black !important;
+  -moz-box-shadow: 0 4px 2px -2px black !important;
+      box-shadow: 0 4px 2px -2px #F0663B !important;
+  background-color: transparent !important;
+ height: 4rem !important;
 }
 
 .myButton{
