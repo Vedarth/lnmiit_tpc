@@ -1,4 +1,4 @@
-@media screen and (max-width: 40em){
+@media screen and (min-width: 481px) and (max-width: 767px){
 	.heading{
 		align-content: center;
 	}
@@ -122,6 +122,16 @@
 	  
 	}
 
+	
+    .first .top-bar{
+      -webkit-box-shadow: 0 4px 2px -2px black;
+      -moz-box-shadow: 0 4px 2px -2px black;
+      box-shadow: 0 4px 2px -2px #F0663B;
+      background-color: transparent;
+      height: 4rem;
+    }
+
+
 	.rec_box{
 		position: relative;
 		align-self: center;
@@ -138,7 +148,15 @@
 		color:#696969;
 		align-content: center;
 		align-items: center;
+		font-size: 14px;
+    	padding-left: 5px;
+    	padding-right: 5px;
 	}
+	.paras-res{
+    padding-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 	.rec_pic {
 		border-radius: 100%;
 		border-color: #F0F0F0;
@@ -189,4 +207,70 @@
 		text-decoration:none;
 		text-shadow:0px -1px 0px #5b6178;
 	}
+
+	.read-more-content,.read-more {
+	text-align: left;
+	margin-top: -1rem;
+	padding-top: 0.1rem;
+	display: none;
+
+  &.expanded {
+    .read-more {
+      color:#696969;
+	align-content: center;
+	align-items: center;
+    }
+    .readButton {
+    	visibility: hidden;
+    }
+   }
+  }
+  
+  .imgDir{
+  	align-self: left; margin-left: 2em;
+  }
+
+.docs-example-orbit-slide {
+  padding: 2rem 4rem;
+  color: $white;
+}
+.orbit-container{
+	height: 25rem;
+}
+.orbit-image{
+	height: 25rem;
+}
+.stats_img{
+	height: 200px;
+}
+.footer-links{
+
+    padding-top: 25px;
+    text-align: center;
+  }
+  .footer-links-2{
+    text-align:center;
+    
+  }
+
+ .director-res
+  {
+    text-align: center;
+  }
+  .stats2-res{
+      margin-top: 50px;
+      text-align: center;
+
+    }
+    .click-here-res{
+      margin-right: 0px !important;
+    }
+      .orbit{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+}
+
+
 }

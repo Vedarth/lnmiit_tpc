@@ -1,4 +1,4 @@
-@media screen and  (min-width: 1025px) and (max-width: 1400px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
 	.heading{
 		align-content: center;
 	}
@@ -18,7 +18,6 @@
 		border-bottom: none;
 		height: 3em;
 	}
-
 	.inactive_scroll{
 		border-color:#A0A0A0;
 		border-radius: 100%;
@@ -131,6 +130,11 @@
       height: 4rem;
     }
 
+	.paras-res{
+    padding-top: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 
 	.rec_box{
 		position: relative;
@@ -147,6 +151,9 @@
 		color:#696969;
 		align-content: center;
 		align-items: center;
+		font-size: 14px;
+    	padding-left: 5px;
+    	padding-right: 5px;
 	}
 	.rec_pic {
 		border-radius: 100%;
@@ -162,13 +169,23 @@
 	a.ddmenu:hover{
 		background-color: #E85212;
 	    color: white !important;
+	    
+	    font-size: 15px;
+	    
 	}
 	 a.ddmenu:link, a.ddmenu:active, a.ddmenu:visited{
 	 	color:#F0663B ;
+	 	
+	 	font-size: 15px;
+	 	
 	 }
 
 	a.ddmenua:hover, a.ddemenua:link, a.ddmenua:active, a.ddmenua:visited{
 		color:#F0663B !important;
+		
+		font-size: 15px;
+
+
 	}
 
 
@@ -219,7 +236,7 @@
   	width: 20%;
   }
   #chart_div{
-  	height: 20rem;
+  	height: 25rem;
   }
 
 .docs-example-orbit-slide {
@@ -235,9 +252,23 @@
 .stats_img{
 	margin-top: 20px
 }
-.complete-stats-res{
-	margin-top:70px;
+.orbit{
+	padding-left: 20px;
+	padding-right: 20px;
 }
-
+.director-row-res{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.footer-links-2{
+    text-align:center;
+   
+  }
+  .menu-tags{
+      
+      font-size: 15px;
+      
+    }
+ }
 
 }

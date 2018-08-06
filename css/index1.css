@@ -1,3 +1,126 @@
+.full-width {
+  max-width: 100%;
+}
+footer{
+
+  margin-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px; 
+  background-color: #F0663B; 
+  padding-right: 0px; 
+  padding: 0px;
+}
+
+footer div {
+  border-right: 0px;
+  color: white;
+
+}
+#footrow{
+  margin-bottom:5%; margin-left: 20px;margin-left: 0px;margin-right: 0px; background-color: #F0663B; padding-right: 0px; 
+}
+#foota{
+  color: white;
+}
+.footicon{
+  font-size: 28px; margin-right: 10px;
+}
+footer div:last-child {
+  border-right: 0px;
+}
+
+#footrow2{
+  margin: 0px 0px 0px 0px; background-color: #F0663B; padding-right: 0px;border-top: solid white 1px; padding-top: 20px;
+}
+
+.iconlist{
+    float: right;
+}
+  div a{
+color: white;
+}
+
+.first .title-bar{
+  background-color: transparent;
+}
+
+.first .menu-icon{
+  background-color: #F0663B;
+}
+
+.first .top-bar{
+  -webkit-box-shadow: 0 4px 2px -2px black;
+  -moz-box-shadow: 0 4px 2px -2px black;
+  box-shadow: 0 4px 2px -2px #F0663B;
+  background-color: transparent;
+  height: 4rem;
+}
+
+.first .top-bar-left{
+ background-color: transparent; 
+}
+.first .dropdown{
+ background-color: transparent; 
+}
+#topul{
+  background-color: transparent;
+}
+#topli{
+
+  color: #F0663B !important;
+  font-size: 20px;
+}
+
+.headings{
+  color: #F0663B; margin-bottom: 1rem;margin-top: 1rem;text-align: center;
+}
+
+.card-image{
+  border-color: white;
+  width: 150px;
+}
+.card-section h6{
+  font-weight: 700;text-align: center;
+}
+.card-section p{
+  font-weight: 500; font-size:15px;text-align: center;
+}
+.card-image img{
+  border-radius: 70px;height: 150px;
+}
+.scroll {
+position: absolute;
+overflow: hidden;
+}
+
+.scroll li{
+list-style: circle;
+}
+
+.boxu {
+margin: -2px;
+position: relative;
+overflow: hidden; 
+height: 12rem
+}
+.news-updates{
+  margin-bottom: 5px;
+  color: #696969;
+}
+
+.news-updates a{
+  color: #696969;
+}
+.news-updates a:hover{
+  color: #F0663B;
+}
+
+
+
+@media (max-width: 767.98px) {
+  
+}
+
   
       .bgimg-1 {
         position: relative;
@@ -149,4 +272,4 @@
     .linesep{
       background-color:#CCC; height: 1px; border: 0;
     }
-   
+
