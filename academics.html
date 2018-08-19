@@ -228,46 +228,36 @@
         </div>
         <br><br>
 
-     <!--Footer-->
-      <footer class="row responsive" style="background-color: #F0663B;"><br>
-          <div class="row align-center grid-x" style="margin-bottom: 5%;margin-left: 15px;">
-            <div class="large-3 small-12 columns size">
-              <h6><b>Quick Links</b></h6>
-              <a href="https://www.lnmiit.ac.in/">LNMIIT Home Page</a><br>
-              <a href="recruiters.html">Recruiters </a><br>
-              <a href="cons_stats.html">Statistics</a><br>
-            </div>
-            <div class="large-3 small-12 columns size">
-              <h6><b>Download</b></h6>
-              <a href="#footrow">Placement Brochure</a><br>
-              
-            </div>
-            <div class="large-3 small-12 columns size">
-              <h6><b>Contact</b></h6>
-              Placement Office<br>
-              Guest House<br>
-              The LNM Institute of Information & Technology<br>
-              Rupa ki Nangal, Post Sumel, Via Jamdoli<br>
-              Jaipur-302031</a>
-            </div>
-            <div class="large-3 small-12 columns size">
-              <br>
-              <img src="images/mail_icon.png" style="height: 1.2em"> <a href="mailto:tpo@lnmiit.ac.in" style="color: white;">tpo@lnmiit.ac.in</a><br>
-              <img src="images/phone-icon-orange.png" style="height: 1.5em">+91 141-2689015, 8696792550
-            </div>
-          </div>
-
-          <hr style="color: white">
-           <div class="row align-center grid-x size" style="margin-left:15px;margin-right:15px; ">
-          <div class="large-4 columns">
-                <p> ©Copyright 2018. All rights reserved | Placement Cell LNMIIT</p>
-          </div>
-           <div class="large-8 columns">
-          <p align="right" class="footer-links-2"> Developers:- <a href="https://github.com/jitenss" target="blank"> Jiten Sadhwani</a>,<a href="https://github.com/   Vedarth" target="blank"> Vedarth Sharma</a>,<a href="https://github.com/aasthasona79" target="blank"> Aastha Agarwal</a>,<a href="https://github.com/kritika0598" target="blank"> Kritika singhal</a>,<a href="https://github.com/tusharb104" target="blank"> Tushar Bansal</a>,<a href="https://github.com/atharvasharma"  target="blank"> Atharva Sharma</a>,<a href="https://github.com/NickSneo" target="blank"> Nischal Sharma</a>
-               </p>
-          </div>
-         </div>
-      </footer>
+     <div w3-include-html="footer.html"></div> 
+        <script>
+  function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+}
+    </script> 
  <script>
          $(document).ready(function() {
             $(document).foundation();
@@ -278,6 +268,9 @@
           document.getElementById('lifeat').click();
         }
       </script>
+       <script>
+  includeHTML();
+    </script> 
      
   </body>
   </html>
