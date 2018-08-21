@@ -105,16 +105,37 @@ body {margin:0;font-family:Arial}
   .topnav a:not(:first-child), .dropdown1 .dropbtn {
     display: none;
   }
+  .topnav {position: relative;}
+  .topnav .icon {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    }
+
+    .topnav.responsive a {
+  
+  text-align: left;
+ }
+
+
   .topnav a.icon {
-    float: right;
+    float: left;
     display: block;
   }
   .right{
-    float: none;
+    float: left;
   }
 
+  .dropdown-content a {
+    float: left;
+  }
+  .dropdown-content {
+     float:left;
+    } 
+
   #image {
-    float: none;display: block;
+    float: right;
+    display: block;
     
   }
   #blank {
@@ -123,7 +144,7 @@ body {margin:0;font-family:Arial}
   }
 
   #drpd{
-    float: none;
+    float: left;
   }
   #home{
     margin-top: 15px;
@@ -134,20 +155,20 @@ body {margin:0;font-family:Arial}
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    left: 0;
+    top: 6px;
     }
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: center;
+    text-align: left;
   }
   .topnav.responsive .dropdown1 {float: none;}
   .topnav.responsive .dropdown-content {position: relative;}
   .topnav.responsive .dropdown1 .dropbtn {
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .logo{
     padding-top: 13px !important;
