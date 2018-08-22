@@ -197,7 +197,7 @@ body {margin:0;font-family:Arial}
   <a href="index.html" id="home">Home</a>
   <a href="recruiters.html">Recruiters</a>
   <a href="cons_stats.html">Statistics</a>
-  <div class="dropdown1" id="drpd"  ><button class="dropbtn" id="life" >Life At LNMIIT<i  onclick="toggleBut2()" class="fa fa-caret-down"></i></button>
+  <div class="dropdown1" id="drpd"  ><button class="dropbtn" id="life" data-toggle="drpc" onclick="toggleBut2()">Life At LNMIIT<i   class="fa fa-caret-down"></i></button>
     <div class="dropdown-content" id="drpc">
       <a href="academics.html">Academic Momentum</a>
       <a href="Prof_societies.html">Professional Societies</a>
@@ -226,13 +226,15 @@ function myFunction2() {
        
          function toggleBut2() {
              var x = document.getElementById("drpc");
+             if (screen.width <=750) {
              if (x.style.display === "none") {
                  x.style.display = "block";
                  
              } else {
                  x.style.display = "none";
                  
-             }
+             }}
+             
          }
          
       </script>
