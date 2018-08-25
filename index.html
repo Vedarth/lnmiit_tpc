@@ -29,12 +29,18 @@
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <script src="js/foundation.util.motion.js"></script>
       <link rel="stylesheet" href="css/index1.css">
-      <link rel="import" href="nav.html">
+      <link rel="import" href="nav.html" async>
       
    </head>
    <body  >
       <div class="large-12 columns" style="padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px; background-color: white; position: relative;">
-         <div id="nav"></div>
+         <div id="nav">
+            <script type="text/javascript">
+               var link = document.querySelector('link[rel=import]');
+               var content = link.import.querySelector('#myTopnav');
+               document.body.appendChild(document.importNode(content, true));
+            </script>
+         </div>
       </div>
 
       <!--About-us-->
