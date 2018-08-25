@@ -36,9 +36,10 @@
       <div class="large-12 columns" style="padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px; background-color: white; position: relative;">
          <div id="nav">
             <script type="text/javascript">
-               var link = document.querySelector('link[rel=import]');
-               var content = link.import.querySelector('#myTopnav');
-               document.body.appendChild(document.importNode(content, true));
+               var thisDoc = document.currentScript.ownerDocument;
+               var thatDoc = document;
+               var content = thisDoc.querySelector('#myTopnav');
+               thatDoc.body.appendChild(thatDoc.importNode(content, true));
             </script>
          </div>
       </div>
