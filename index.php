@@ -34,10 +34,11 @@
    </head>
    <body  >
 
-      <?php  
+      
+      <div class="large-12 columns" style="padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px; background-color: white; position: relative;">
+	<?php  
          include("nav.php"); 
       ?>
-      <div class="large-12 columns" style="padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px; background-color: white; position: relative;">
          
       </div>
 

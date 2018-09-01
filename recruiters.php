@@ -129,12 +129,12 @@
     </style>
   </head>
   <body>
-<?php  
-         include("nav.php"); 
-      ?>
+
     
 <div class="row full-width">
-  <!--<div w3-include-html="nav.html"></div>-->
+  <?php  
+         include("nav.php"); 
+      ?>
 </div>
 
 <br>
@@ -282,9 +282,7 @@
           document.getElementById('lifeat').click();
         }
       </script>
-       <!--<script>
-  includeHTML();-->
-    </script> 
+       
     <script>
 function myFunction2() {
     var x = document.getElementById("myTopnav");

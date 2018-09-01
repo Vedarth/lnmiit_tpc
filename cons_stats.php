@@ -203,9 +203,7 @@
   
   <p class="paras" align="right">*Including internship conversions</p>
 </div>
-     <!--Footer-->
-      
-      </footer> -->
+     
       <?php  
          include("footer.php"); 
       ?>
