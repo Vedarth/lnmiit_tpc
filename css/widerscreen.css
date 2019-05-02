@@ -238,10 +238,10 @@
   color: $white;
 }
 .orbit-container{
-	height: 20rem;
+	height: 25rem;
 }
 .orbit-image{
-	height: 20rem;
+	height: 25rem;
 }
 
 .stats_img{
@@ -250,5 +250,9 @@
 }
 .complete-stats-res{
 	margin-top:110px;
+}
+.slider-row{
+	padding-right: 1rem !important;
+	padding-left: 1rem !important
 }
 }
